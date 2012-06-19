@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09BE77F71590F03B000CFCEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F61590F03B000CFCEB /* UIKit.framework */; };
+		09BE77F91590F03B000CFCEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F81590F03B000CFCEB /* Foundation.framework */; };
+		09BE77FB1590F03B000CFCEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77FA1590F03B000CFCEB /* CoreGraphics.framework */; };
+		09BE78011590F03B000CFCEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09BE77FF1590F03B000CFCEB /* InfoPlist.strings */; };
+		09BE78031590F03B000CFCEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE78021590F03B000CFCEB /* main.m */; };
+		09BE78071590F03B000CFCEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE78061590F03B000CFCEB /* AppDelegate.m */; };
+		09BE780A1590F03B000CFCEB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE78091590F03B000CFCEB /* MasterViewController.m */; };
+		09BE780D1590F03B000CFCEB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE780C1590F03B000CFCEB /* DetailViewController.m */; };
+		09BE78101590F03B000CFCEB /* MasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BE780E1590F03B000CFCEB /* MasterViewController_iPhone.xib */; };
+		09BE78131590F03B000CFCEB /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78111590F03B000CFCEB /* MasterViewController_iPad.xib */; };
+		09BE78161590F03B000CFCEB /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78141590F03B000CFCEB /* DetailViewController_iPhone.xib */; };
+		09BE78191590F03B000CFCEB /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78171590F03B000CFCEB /* DetailViewController_iPad.xib */; };
+		09BE78211590F03B000CFCEB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE78201590F03B000CFCEB /* SenTestingKit.framework */; };
+		09BE78221590F03B000CFCEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F61590F03B000CFCEB /* UIKit.framework */; };
+		09BE78231590F03B000CFCEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F81590F03B000CFCEB /* Foundation.framework */; };
+		09BE782B1590F03B000CFCEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78291590F03B000CFCEB /* InfoPlist.strings */; };
+		09BE782E1590F03B000CFCEB /* rit_busTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE782D1590F03B000CFCEB /* rit_busTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09BE78241590F03B000CFCEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09BE77E91590F03B000CFCEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09BE77F11590F03B000CFCEB;
+			remoteInfo = rit_bus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09BE77F21590F03B000CFCEB /* rit_bus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rit_bus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BE77F61590F03B000CFCEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		09BE77F81590F03B000CFCEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		09BE77FA1590F03B000CFCEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		09BE77FE1590F03B000CFCEB /* rit_bus-Info.plist */ = {isa = PBXFileReference; path = "rit_bus-Info.plist"; sourceTree = "<group>"; };
+		09BE78001590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09BE78021590F03B000CFCEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09BE78041590F03B000CFCEB /* rit_bus-Prefix.pch */ = {isa = PBXFileReference; path = "rit_bus-Prefix.pch"; sourceTree = "<group>"; };
+		09BE78051590F03B000CFCEB /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		09BE78061590F03B000CFCEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09BE78081590F03B000CFCEB /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		09BE78091590F03B000CFCEB /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		09BE780B1590F03B000CFCEB /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		09BE780C1590F03B000CFCEB /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		09BE780F1590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPhone.xib; sourceTree = "<group>"; };
+		09BE78121590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
+		09BE78151590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		09BE78181590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
+		09BE781F1590F03B000CFCEB /* rit_busTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rit_busTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BE78201590F03B000CFCEB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		09BE78281590F03B000CFCEB /* rit_busTests-Info.plist */ = {isa = PBXFileReference; path = "rit_busTests-Info.plist"; sourceTree = "<group>"; };
+		09BE782A1590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		09BE782C1590F03B000CFCEB /* rit_busTests.h */ = {isa = PBXFileReference; path = rit_busTests.h; sourceTree = "<group>"; };
+		09BE782D1590F03B000CFCEB /* rit_busTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rit_busTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09BE77EF1590F03B000CFCEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BE77F71590F03B000CFCEB /* UIKit.framework in Frameworks */,
+				09BE77F91590F03B000CFCEB /* Foundation.framework in Frameworks */,
+				09BE77FB1590F03B000CFCEB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BE781B1590F03B000CFCEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BE78211590F03B000CFCEB /* SenTestingKit.framework in Frameworks */,
+				09BE78221590F03B000CFCEB /* UIKit.framework in Frameworks */,
+				09BE78231590F03B000CFCEB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09BE77E71590F03B000CFCEB = {
+			isa = PBXGroup;
+			children = (
+				09BE77FC1590F03B000CFCEB /* rit_bus */,
+				09BE78261590F03B000CFCEB /* rit_busTests */,
+				09BE77F51590F03B000CFCEB /* Frameworks */,
+				09BE77F31590F03B000CFCEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09BE77F31590F03B000CFCEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09BE77F21590F03B000CFCEB /* rit_bus.app */,
+				09BE781F1590F03B000CFCEB /* rit_busTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09BE77F51590F03B000CFCEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09BE77F61590F03B000CFCEB /* UIKit.framework */,
+				09BE77F81590F03B000CFCEB /* Foundation.framework */,
+				09BE77FA1590F03B000CFCEB /* CoreGraphics.framework */,
+				09BE78201590F03B000CFCEB /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09BE77FC1590F03B000CFCEB /* rit_bus */ = {
+			isa = PBXGroup;
+			children = (
+				09BE78051590F03B000CFCEB /* AppDelegate.h */,
+				09BE78061590F03B000CFCEB /* AppDelegate.m */,
+				09BE78081590F03B000CFCEB /* MasterViewController.h */,
+				09BE78091590F03B000CFCEB /* MasterViewController.m */,
+				09BE780B1590F03B000CFCEB /* DetailViewController.h */,
+				09BE780C1590F03B000CFCEB /* DetailViewController.m */,
+				09BE780E1590F03B000CFCEB /* MasterViewController_iPhone.xib */,
+				09BE78111590F03B000CFCEB /* MasterViewController_iPad.xib */,
+				09BE78141590F03B000CFCEB /* DetailViewController_iPhone.xib */,
+				09BE78171590F03B000CFCEB /* DetailViewController_iPad.xib */,
+				09BE77FD1590F03B000CFCEB /* Supporting Files */,
+			);
+			path = rit_bus;
+			sourceTree = "<group>";
+		};
+		09BE77FD1590F03B000CFCEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09BE77FE1590F03B000CFCEB /* rit_bus-Info.plist */,
+				09BE77FF1590F03B000CFCEB /* InfoPlist.strings */,
+				09BE78021590F03B000CFCEB /* main.m */,
+				09BE78041590F03B000CFCEB /* rit_bus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09BE78261590F03B000CFCEB /* rit_busTests */ = {
+			isa = PBXGroup;
+			children = (
+				09BE782C1590F03B000CFCEB /* rit_busTests.h */,
+				09BE782D1590F03B000CFCEB /* rit_busTests.m */,
+				09BE78271590F03B000CFCEB /* Supporting Files */,
+			);
+			path = rit_busTests;
+			sourceTree = "<group>";
+		};
+		09BE78271590F03B000CFCEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09BE78281590F03B000CFCEB /* rit_busTests-Info.plist */,
+				09BE78291590F03B000CFCEB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09BE77F11590F03B000CFCEB /* rit_bus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BE78311590F03B000CFCEB /* Build configuration list for PBXNativeTarget "rit_bus" */;
+			buildPhases = (
+				09BE77EE1590F03B000CFCEB /* Sources */,
+				09BE77EF1590F03B000CFCEB /* Frameworks */,
+				09BE77F01590F03B000CFCEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rit_bus;
+			productName = rit_bus;
+			productReference = 09BE77F21590F03B000CFCEB /* rit_bus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09BE781E1590F03B000CFCEB /* rit_busTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BE78341590F03B000CFCEB /* Build configuration list for PBXNativeTarget "rit_busTests" */;
+			buildPhases = (
+				09BE781A1590F03B000CFCEB /* Sources */,
+				09BE781B1590F03B000CFCEB /* Frameworks */,
+				09BE781C1590F03B000CFCEB /* Resources */,
+				09BE781D1590F03B000CFCEB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09BE78251590F03B000CFCEB /* PBXTargetDependency */,
+			);
+			name = rit_busTests;
+			productName = rit_busTests;
+			productReference = 09BE781F1590F03B000CFCEB /* rit_busTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09BE77E91590F03B000CFCEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 09BE77EC1590F03B000CFCEB /* Build configuration list for PBXProject "rit_bus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 09BE77E71590F03B000CFCEB;
+			productRefGroup = 09BE77F31590F03B000CFCEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09BE77F11590F03B000CFCEB /* rit_bus */,
+				09BE781E1590F03B000CFCEB /* rit_busTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09BE77F01590F03B000CFCEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BE78011590F03B000CFCEB /* InfoPlist.strings in Resources */,
+				09BE78101590F03B000CFCEB /* MasterViewController_iPhone.xib in Resources */,
+				09BE78131590F03B000CFCEB /* MasterViewController_iPad.xib in Resources */,
+				09BE78161590F03B000CFCEB /* DetailViewController_iPhone.xib in Resources */,
+				09BE78191590F03B000CFCEB /* DetailViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BE781C1590F03B000CFCEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BE782B1590F03B000CFCEB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09BE781D1590F03B000CFCEB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09BE77EE1590F03B000CFCEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BE78031590F03B000CFCEB /* main.m in Sources */,
+				09BE78071590F03B000CFCEB /* AppDelegate.m in Sources */,
+				09BE780A1590F03B000CFCEB /* MasterViewController.m in Sources */,
+				09BE780D1590F03B000CFCEB /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09BE781A1590F03B000CFCEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09BE782E1590F03B000CFCEB /* rit_busTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09BE78251590F03B000CFCEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09BE77F11590F03B000CFCEB /* rit_bus */;
+			targetProxy = 09BE78241590F03B000CFCEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09BE77FF1590F03B000CFCEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09BE78001590F03B000CFCEB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		09BE780E1590F03B000CFCEB /* MasterViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09BE780F1590F03B000CFCEB /* en */,
+			);
+			name = MasterViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		09BE78111590F03B000CFCEB /* MasterViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09BE78121590F03B000CFCEB /* en */,
+			);
+			name = MasterViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		09BE78141590F03B000CFCEB /* DetailViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09BE78151590F03B000CFCEB /* en */,
+			);
+			name = DetailViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		09BE78171590F03B000CFCEB /* DetailViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09BE78181590F03B000CFCEB /* en */,
+			);
+			name = DetailViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		09BE78291590F03B000CFCEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09BE782A1590F03B000CFCEB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09BE782F1590F03B000CFCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09BE78301590F03B000CFCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09BE78321590F03B000CFCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rit_bus/rit_bus-Prefix.pch";
+				INFOPLIST_FILE = "rit_bus/rit_bus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		09BE78331590F03B000CFCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rit_bus/rit_bus-Prefix.pch";
+				INFOPLIST_FILE = "rit_bus/rit_bus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		09BE78351590F03B000CFCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/rit_bus.app/rit_bus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rit_bus/rit_bus-Prefix.pch";
+				INFOPLIST_FILE = "rit_busTests/rit_busTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		09BE78361590F03B000CFCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/rit_bus.app/rit_bus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rit_bus/rit_bus-Prefix.pch";
+				INFOPLIST_FILE = "rit_busTests/rit_busTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09BE77EC1590F03B000CFCEB /* Build configuration list for PBXProject "rit_bus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BE782F1590F03B000CFCEB /* Debug */,
+				09BE78301590F03B000CFCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09BE78311590F03B000CFCEB /* Build configuration list for PBXNativeTarget "rit_bus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BE78321590F03B000CFCEB /* Debug */,
+				09BE78331590F03B000CFCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		09BE78341590F03B000CFCEB /* Build configuration list for PBXNativeTarget "rit_busTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09BE78351590F03B000CFCEB /* Debug */,
+				09BE78361590F03B000CFCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09BE77E91590F03B000CFCEB /* Project object */;
+}
