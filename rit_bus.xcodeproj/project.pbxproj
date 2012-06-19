@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0934F69D159113D800A58A04 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934F69B159113D700A58A04 /* MapViewController.m */; };
+		0934F69E159113D800A58A04 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0934F69C159113D700A58A04 /* MapViewController.xib */; };
+		0934F6A11591178C00A58A04 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0934F6A01591178C00A58A04 /* CoreLocation.framework */; };
+		0934F6AA15911E9F00A58A04 /* RitBusMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934F6A915911E9F00A58A04 /* RitBusMapView.m */; };
+		0934F6AC15911EB000A58A04 /* RitBusMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0934F6AB15911EB000A58A04 /* RitBusMapView.xib */; };
 		09BE77F71590F03B000CFCEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F61590F03B000CFCEB /* UIKit.framework */; };
 		09BE77F91590F03B000CFCEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F81590F03B000CFCEB /* Foundation.framework */; };
 		09BE77FB1590F03B000CFCEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77FA1590F03B000CFCEB /* CoreGraphics.framework */; };
@@ -24,6 +29,7 @@
 		09BE78231590F03B000CFCEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F81590F03B000CFCEB /* Foundation.framework */; };
 		09BE782B1590F03B000CFCEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78291590F03B000CFCEB /* InfoPlist.strings */; };
 		09BE782E1590F03B000CFCEB /* rit_busTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE782D1590F03B000CFCEB /* rit_busTests.m */; };
+		09BE784A15910671000CFCEB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE784915910671000CFCEB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +43,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0934F69A159113D700A58A04 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		0934F69B159113D700A58A04 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		0934F69C159113D700A58A04 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		0934F6A01591178C00A58A04 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0934F6A815911E9F00A58A04 /* RitBusMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RitBusMapView.h; sourceTree = "<group>"; };
+		0934F6A915911E9F00A58A04 /* RitBusMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RitBusMapView.m; sourceTree = "<group>"; };
+		0934F6AB15911EB000A58A04 /* RitBusMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RitBusMapView.xib; sourceTree = "<group>"; };
 		09BE77F21590F03B000CFCEB /* rit_bus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rit_bus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BE77F61590F03B000CFCEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09BE77F81590F03B000CFCEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		09BE77FA1590F03B000CFCEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		09BE77FE1590F03B000CFCEB /* rit_bus-Info.plist */ = {isa = PBXFileReference; path = "rit_bus-Info.plist"; sourceTree = "<group>"; };
+		09BE77FE1590F03B000CFCEB /* rit_bus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "rit_bus-Info.plist"; sourceTree = "<group>"; };
 		09BE78001590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09BE78021590F03B000CFCEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		09BE78041590F03B000CFCEB /* rit_bus-Prefix.pch */ = {isa = PBXFileReference; path = "rit_bus-Prefix.pch"; sourceTree = "<group>"; };
-		09BE78051590F03B000CFCEB /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		09BE78041590F03B000CFCEB /* rit_bus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rit_bus-Prefix.pch"; sourceTree = "<group>"; };
+		09BE78051590F03B000CFCEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		09BE78061590F03B000CFCEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		09BE78081590F03B000CFCEB /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		09BE78081590F03B000CFCEB /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		09BE78091590F03B000CFCEB /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		09BE780B1590F03B000CFCEB /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		09BE780B1590F03B000CFCEB /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		09BE780C1590F03B000CFCEB /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		09BE780F1590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPhone.xib; sourceTree = "<group>"; };
 		09BE78121590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
@@ -57,10 +70,11 @@
 		09BE78181590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
 		09BE781F1590F03B000CFCEB /* rit_busTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rit_busTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BE78201590F03B000CFCEB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		09BE78281590F03B000CFCEB /* rit_busTests-Info.plist */ = {isa = PBXFileReference; path = "rit_busTests-Info.plist"; sourceTree = "<group>"; };
+		09BE78281590F03B000CFCEB /* rit_busTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "rit_busTests-Info.plist"; sourceTree = "<group>"; };
 		09BE782A1590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		09BE782C1590F03B000CFCEB /* rit_busTests.h */ = {isa = PBXFileReference; path = rit_busTests.h; sourceTree = "<group>"; };
+		09BE782C1590F03B000CFCEB /* rit_busTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rit_busTests.h; sourceTree = "<group>"; };
 		09BE782D1590F03B000CFCEB /* rit_busTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rit_busTests.m; sourceTree = "<group>"; };
+		09BE784915910671000CFCEB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0934F6A11591178C00A58A04 /* CoreLocation.framework in Frameworks */,
+				09BE784A15910671000CFCEB /* MapKit.framework in Frameworks */,
 				09BE77F71590F03B000CFCEB /* UIKit.framework in Frameworks */,
 				09BE77F91590F03B000CFCEB /* Foundation.framework in Frameworks */,
 				09BE77FB1590F03B000CFCEB /* CoreGraphics.framework in Frameworks */,
@@ -90,7 +106,7 @@
 		09BE77E71590F03B000CFCEB = {
 			isa = PBXGroup;
 			children = (
-				09BE77FC1590F03B000CFCEB /* rit_bus */,
+				09BE77FC1590F03B000CFCEB /* rit_bus_source */,
 				09BE78261590F03B000CFCEB /* rit_busTests */,
 				09BE77F51590F03B000CFCEB /* Frameworks */,
 				09BE77F31590F03B000CFCEB /* Products */,
@@ -109,6 +125,8 @@
 		09BE77F51590F03B000CFCEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0934F6A01591178C00A58A04 /* CoreLocation.framework */,
+				09BE784915910671000CFCEB /* MapKit.framework */,
 				09BE77F61590F03B000CFCEB /* UIKit.framework */,
 				09BE77F81590F03B000CFCEB /* Foundation.framework */,
 				09BE77FA1590F03B000CFCEB /* CoreGraphics.framework */,
@@ -117,21 +135,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		09BE77FC1590F03B000CFCEB /* rit_bus */ = {
+		09BE77FC1590F03B000CFCEB /* rit_bus_source */ = {
 			isa = PBXGroup;
 			children = (
-				09BE78051590F03B000CFCEB /* AppDelegate.h */,
-				09BE78061590F03B000CFCEB /* AppDelegate.m */,
+				09BE783C1590FB40000CFCEB /* AppDelegate */,
+				09BE783E1590FC0E000CFCEB /* Maps */,
 				09BE78081590F03B000CFCEB /* MasterViewController.h */,
 				09BE78091590F03B000CFCEB /* MasterViewController.m */,
-				09BE780B1590F03B000CFCEB /* DetailViewController.h */,
-				09BE780C1590F03B000CFCEB /* DetailViewController.m */,
 				09BE780E1590F03B000CFCEB /* MasterViewController_iPhone.xib */,
 				09BE78111590F03B000CFCEB /* MasterViewController_iPad.xib */,
+				09BE780B1590F03B000CFCEB /* DetailViewController.h */,
+				09BE780C1590F03B000CFCEB /* DetailViewController.m */,
 				09BE78141590F03B000CFCEB /* DetailViewController_iPhone.xib */,
 				09BE78171590F03B000CFCEB /* DetailViewController_iPad.xib */,
 				09BE77FD1590F03B000CFCEB /* Supporting Files */,
 			);
+			name = rit_bus_source;
 			path = rit_bus;
 			sourceTree = "<group>";
 		};
@@ -163,6 +182,28 @@
 				09BE78291590F03B000CFCEB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09BE783C1590FB40000CFCEB /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				09BE78051590F03B000CFCEB /* AppDelegate.h */,
+				09BE78061590F03B000CFCEB /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		09BE783E1590FC0E000CFCEB /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				0934F69A159113D700A58A04 /* MapViewController.h */,
+				0934F69B159113D700A58A04 /* MapViewController.m */,
+				0934F69C159113D700A58A04 /* MapViewController.xib */,
+				0934F6A815911E9F00A58A04 /* RitBusMapView.h */,
+				0934F6A915911E9F00A58A04 /* RitBusMapView.m */,
+				0934F6AB15911EB000A58A04 /* RitBusMapView.xib */,
+			);
+			name = Maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +281,8 @@
 				09BE78131590F03B000CFCEB /* MasterViewController_iPad.xib in Resources */,
 				09BE78161590F03B000CFCEB /* DetailViewController_iPhone.xib in Resources */,
 				09BE78191590F03B000CFCEB /* DetailViewController_iPad.xib in Resources */,
+				0934F69E159113D800A58A04 /* MapViewController.xib in Resources */,
+				0934F6AC15911EB000A58A04 /* RitBusMapView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +321,8 @@
 				09BE78071590F03B000CFCEB /* AppDelegate.m in Sources */,
 				09BE780A1590F03B000CFCEB /* MasterViewController.m in Sources */,
 				09BE780D1590F03B000CFCEB /* DetailViewController.m in Sources */,
+				0934F69D159113D800A58A04 /* MapViewController.m in Sources */,
+				0934F6AA15911E9F00A58A04 /* RitBusMapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +449,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "rit_bus/rit_bus-Prefix.pch";
 				INFOPLIST_FILE = "rit_bus/rit_bus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -415,6 +461,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "rit_bus/rit_bus-Prefix.pch";
 				INFOPLIST_FILE = "rit_bus/rit_bus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -473,6 +520,7 @@
 				09BE78331590F03B000CFCEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09BE78341590F03B000CFCEB /* Build configuration list for PBXNativeTarget "rit_busTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +529,7 @@
 				09BE78361590F03B000CFCEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
