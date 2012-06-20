@@ -12,6 +12,9 @@
 		0934F6A11591178C00A58A04 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0934F6A01591178C00A58A04 /* CoreLocation.framework */; };
 		0934F6AA15911E9F00A58A04 /* RitBusMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934F6A915911E9F00A58A04 /* RitBusMapView.m */; };
 		0934F6AC15911EB000A58A04 /* RitBusMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0934F6AB15911EB000A58A04 /* RitBusMapView.xib */; };
+		0934F6B815922E2100A58A04 /* park_point_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0934F6B715922E2100A58A04 /* park_point_stops.plist */; };
+		0934F6BF15926B3B00A58A04 /* BusPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934F6BE15926B3B00A58A04 /* BusPoint.m */; };
+		0934F6C31592707C00A58A04 /* RITBusConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934F6C21592707C00A58A04 /* RITBusConstants.m */; };
 		09BE77F71590F03B000CFCEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F61590F03B000CFCEB /* UIKit.framework */; };
 		09BE77F91590F03B000CFCEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F81590F03B000CFCEB /* Foundation.framework */; };
 		09BE77FB1590F03B000CFCEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77FA1590F03B000CFCEB /* CoreGraphics.framework */; };
@@ -30,6 +33,7 @@
 		09BE782B1590F03B000CFCEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78291590F03B000CFCEB /* InfoPlist.strings */; };
 		09BE782E1590F03B000CFCEB /* rit_busTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE782D1590F03B000CFCEB /* rit_busTests.m */; };
 		09BE784A15910671000CFCEB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE784915910671000CFCEB /* MapKit.framework */; };
+		09EA957C15927B2C00591081 /* park_point_stops_copy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09EA957B15927B2C00591081 /* park_point_stops_copy.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,11 @@
 		0934F6A815911E9F00A58A04 /* RitBusMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RitBusMapView.h; sourceTree = "<group>"; };
 		0934F6A915911E9F00A58A04 /* RitBusMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RitBusMapView.m; sourceTree = "<group>"; };
 		0934F6AB15911EB000A58A04 /* RitBusMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RitBusMapView.xib; sourceTree = "<group>"; };
+		0934F6B715922E2100A58A04 /* park_point_stops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = park_point_stops.plist; sourceTree = "<group>"; };
+		0934F6BD15926B3A00A58A04 /* BusPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPoint.h; sourceTree = "<group>"; };
+		0934F6BE15926B3B00A58A04 /* BusPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPoint.m; sourceTree = "<group>"; };
+		0934F6C11592707C00A58A04 /* RITBusConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITBusConstants.h; sourceTree = "<group>"; };
+		0934F6C21592707C00A58A04 /* RITBusConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITBusConstants.m; sourceTree = "<group>"; };
 		09BE77F21590F03B000CFCEB /* rit_bus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rit_bus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BE77F61590F03B000CFCEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09BE77F81590F03B000CFCEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,6 +84,7 @@
 		09BE782C1590F03B000CFCEB /* rit_busTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rit_busTests.h; sourceTree = "<group>"; };
 		09BE782D1590F03B000CFCEB /* rit_busTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rit_busTests.m; sourceTree = "<group>"; };
 		09BE784915910671000CFCEB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		09EA957B15927B2C00591081 /* park_point_stops_copy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = park_point_stops_copy.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +113,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0934F6B515922E0400A58A04 /* rit_bus_resources */ = {
+			isa = PBXGroup;
+			children = (
+				0934F6B715922E2100A58A04 /* park_point_stops.plist */,
+				09EA957B15927B2C00591081 /* park_point_stops_copy.plist */,
+			);
+			name = rit_bus_resources;
+			path = rit_bus;
+			sourceTree = "<group>";
+		};
+		0934F6C01592705D00A58A04 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0934F6C11592707C00A58A04 /* RITBusConstants.h */,
+				0934F6C21592707C00A58A04 /* RITBusConstants.m */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		09BE77E71590F03B000CFCEB = {
 			isa = PBXGroup;
 			children = (
+				0934F6B515922E0400A58A04 /* rit_bus_resources */,
 				09BE77FC1590F03B000CFCEB /* rit_bus_source */,
 				09BE78261590F03B000CFCEB /* rit_busTests */,
 				09BE77F51590F03B000CFCEB /* Frameworks */,
@@ -140,6 +170,7 @@
 			children = (
 				09BE783C1590FB40000CFCEB /* AppDelegate */,
 				09BE783E1590FC0E000CFCEB /* Maps */,
+				0934F6C01592705D00A58A04 /* Shared */,
 				09BE78081590F03B000CFCEB /* MasterViewController.h */,
 				09BE78091590F03B000CFCEB /* MasterViewController.m */,
 				09BE780E1590F03B000CFCEB /* MasterViewController_iPhone.xib */,
@@ -196,6 +227,8 @@
 		09BE783E1590FC0E000CFCEB /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				0934F6BD15926B3A00A58A04 /* BusPoint.h */,
+				0934F6BE15926B3B00A58A04 /* BusPoint.m */,
 				0934F69A159113D700A58A04 /* MapViewController.h */,
 				0934F69B159113D700A58A04 /* MapViewController.m */,
 				0934F69C159113D700A58A04 /* MapViewController.xib */,
@@ -283,6 +316,8 @@
 				09BE78191590F03B000CFCEB /* DetailViewController_iPad.xib in Resources */,
 				0934F69E159113D800A58A04 /* MapViewController.xib in Resources */,
 				0934F6AC15911EB000A58A04 /* RitBusMapView.xib in Resources */,
+				0934F6B815922E2100A58A04 /* park_point_stops.plist in Resources */,
+				09EA957C15927B2C00591081 /* park_point_stops_copy.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +358,8 @@
 				09BE780D1590F03B000CFCEB /* DetailViewController.m in Sources */,
 				0934F69D159113D800A58A04 /* MapViewController.m in Sources */,
 				0934F6AA15911E9F00A58A04 /* RitBusMapView.m in Sources */,
+				0934F6BF15926B3B00A58A04 /* BusPoint.m in Sources */,
+				0934F6C31592707C00A58A04 /* RITBusConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
