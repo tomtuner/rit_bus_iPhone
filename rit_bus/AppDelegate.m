@@ -44,7 +44,7 @@
 //        self.window.rootViewController = self.splitViewController;
 //    }
     
-    MapViewController *mapViewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+    MapViewController *mapViewController = [[MapViewController alloc] initWithNibName:nil bundle:nil];
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
     

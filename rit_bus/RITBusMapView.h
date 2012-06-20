@@ -14,7 +14,7 @@
 
 
 
-@property (strong, nonatomic) IBOutlet UIView *view;
+@property (strong, nonatomic) IBOutlet UIView *busView;
 
 @property (strong, nonatomic) IBOutlet MKMapView* mapView;
 @end

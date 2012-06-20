@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "RitBusMapView.h"
+#import "BusPoint.h"
+#import "RITBusConstants.h"
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController <MKMapViewDelegate>
 
 
 @property (nonatomic, retain) IBOutlet RitBusMapView *ritBusMapView;
+@property (nonatomic, retain) IBOutlet MKMapView *busMapView;
 
 @end

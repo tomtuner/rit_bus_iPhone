@@ -18,16 +18,16 @@
 
 @implementation RitBusMapView
 
-@synthesize view;
+@synthesize busView;
 @synthesize mapView;
 @synthesize polylines;
 
 - (id)initWithFrame:(CGRect)frame
 {
     if ((self = [super initWithFrame:frame])) {
-        [self initialize];
+//        [self initialize];
         
-        view.frame = self.frame;
+        busView.frame = self.frame;
     }
     return self;
 }
@@ -40,9 +40,9 @@
 - (void)initialize
 {
     [[NSBundle mainBundle] loadNibNamed:@"RitBusMapView" owner:self options:nil];
-    [self addSubview:view];
+    [self addSubview:busView];
     
-    view.frame = self.frame;
+    busView.frame = self.frame;
     polylines = [[NSMutableArray alloc] init];
     
     mapView.delegate = self;
@@ -72,7 +72,6 @@
     region.span = span;
     
     [self.mapView setRegion:region];
-    
 }
 
 @end
