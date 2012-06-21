@@ -35,6 +35,7 @@
 		09BE784A15910671000CFCEB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE784915910671000CFCEB /* MapKit.framework */; };
 		09EA957C15927B2C00591081 /* park_point_stops_copy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09EA957B15927B2C00591081 /* park_point_stops_copy.plist */; };
 		09EA95841593583200591081 /* StopAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA95831593583200591081 /* StopAnnotation.m */; };
+		09EA95881593B28B00591081 /* StopAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA95871593B28B00591081 /* StopAnnotationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		09EA957B15927B2C00591081 /* park_point_stops_copy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = park_point_stops_copy.plist; sourceTree = "<group>"; };
 		09EA95821593583200591081 /* StopAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopAnnotation.h; sourceTree = "<group>"; };
 		09EA95831593583200591081 /* StopAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopAnnotation.m; sourceTree = "<group>"; };
+		09EA95861593B28B00591081 /* StopAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopAnnotationView.h; sourceTree = "<group>"; };
+		09EA95871593B28B00591081 /* StopAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopAnnotationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +233,8 @@
 		09BE783E1590FC0E000CFCEB /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				09EA95861593B28B00591081 /* StopAnnotationView.h */,
+				09EA95871593B28B00591081 /* StopAnnotationView.m */,
 				09EA95821593583200591081 /* StopAnnotation.h */,
 				09EA95831593583200591081 /* StopAnnotation.m */,
 				0934F6BD15926B3A00A58A04 /* BusPoint.h */,
@@ -366,6 +371,7 @@
 				0934F6BF15926B3B00A58A04 /* BusPoint.m in Sources */,
 				0934F6C31592707C00A58A04 /* RITBusConstants.m in Sources */,
 				09EA95841593583200591081 /* StopAnnotation.m in Sources */,
+				09EA95881593B28B00591081 /* StopAnnotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
