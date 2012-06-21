@@ -34,6 +34,7 @@
 		09BE782E1590F03B000CFCEB /* rit_busTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE782D1590F03B000CFCEB /* rit_busTests.m */; };
 		09BE784A15910671000CFCEB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE784915910671000CFCEB /* MapKit.framework */; };
 		09EA957C15927B2C00591081 /* park_point_stops_copy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09EA957B15927B2C00591081 /* park_point_stops_copy.plist */; };
+		09EA95841593583200591081 /* StopAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA95831593583200591081 /* StopAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		09BE782D1590F03B000CFCEB /* rit_busTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rit_busTests.m; sourceTree = "<group>"; };
 		09BE784915910671000CFCEB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		09EA957B15927B2C00591081 /* park_point_stops_copy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = park_point_stops_copy.plist; sourceTree = "<group>"; };
+		09EA95821593583200591081 /* StopAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopAnnotation.h; sourceTree = "<group>"; };
+		09EA95831593583200591081 /* StopAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,8 @@
 		09BE783E1590FC0E000CFCEB /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				09EA95821593583200591081 /* StopAnnotation.h */,
+				09EA95831593583200591081 /* StopAnnotation.m */,
 				0934F6BD15926B3A00A58A04 /* BusPoint.h */,
 				0934F6BE15926B3B00A58A04 /* BusPoint.m */,
 				0934F69A159113D700A58A04 /* MapViewController.h */,
@@ -360,6 +365,7 @@
 				0934F6AA15911E9F00A58A04 /* RitBusMapView.m in Sources */,
 				0934F6BF15926B3B00A58A04 /* BusPoint.m in Sources */,
 				0934F6C31592707C00A58A04 /* RITBusConstants.m in Sources */,
+				09EA95841593583200591081 /* StopAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
