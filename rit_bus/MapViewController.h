@@ -10,11 +10,15 @@
 #import "RitBusMapView.h"
 #import "BusPoint.h"
 #import "RITBusConstants.h"
+#import "StopAnnotation.h"
 
-@interface MapViewController : UIViewController <MKMapViewDelegate>
+@interface MapViewController : UIViewController <MKMapViewDelegate> {
+    
+}
 
 
 @property (nonatomic, retain) IBOutlet RitBusMapView *ritBusMapView;
 @property (nonatomic, retain) IBOutlet MKMapView *busMapView;
+@property (nonatomic, retain) IBOutlet UIButton *hideAnnotionsButton;
 
 @end

@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSMutableArray *polylines;
 @property (strong, nonatomic) NSMutableArray *busPoints;
+@property (strong, nonatomic) NSMutableArray *parkPointAnnotations;
 
 @end
 
@@ -21,6 +22,7 @@
 @synthesize busMapView;
 @synthesize polylines;
 @synthesize busPoints;
+@synthesize hideAnnotionsButton;
 
 - (void)viewDidLoad
 {
@@ -45,6 +47,8 @@
     id key;
     BusPoint *point;
     
+    StopAnnotation *stopAnnotation;
+    
     while ((key = [enumerator nextObject])) {
         NSDictionary *stop = [parkPointStops objectForKey:key];
     
@@ -55,8 +59,11 @@
         coordinate.longitude = [[stop  objectForKey:@"longitude"] doubleValue];
         
         point = [[BusPoint alloc] initWithCoordinate:coordinate];
+        stopAnnotation = [[StopAnnotation alloc] initWithCoordinate:coordinate placeName:nil description:nil];
+        
         if (![title isEqualToString:@""]) {
             [point setTitle:title];
+            [stopAnnotation setTitle:title];
         }
         if (count == 0) {
             region.center = coordinate;
@@ -66,8 +73,10 @@
         [busPoints addObject:point];
         count++;
         
+        [self.busMapView addAnnotation:stopAnnotation];
+        
     }
-    [polylines addObject:[MKPolyline polylineWithPoints:points count:count]];
+//    [polylines addObject:[MKPolyline polylineWithPoints:points count:count]];
 
     [self.busMapView addOverlays:polylines];
     
@@ -88,6 +97,17 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
     ritBusMapView = nil;
+}
+
+- (IBAction)hideAllAnnotation:(id)sender {
+    NSArray *annotations = [self.busMapView annotations];
+    StopAnnotation *annotation = nil; 
+    if ([annotations count] > 0) {
+        for (int i=0; i<[annotations count]; i++) {
+            annotation = (StopAnnotation*)[annotations objectAtIndex:i];
+            [[busMapView viewForAnnotation:annotation] setHidden:YES];
+        }
+    }
 }
 
 - (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay
