@@ -110,6 +110,22 @@
     }
 }
 
+#pragma mark - MKMapViewDelegate Methods
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    if ([annotation isKindOfClass:[StopAnnotation class]]) {
+        StopAnnotation *mapAnnotation = (StopAnnotation *)annotation;
+        
+        StopAnnotationView *annotationView = [[StopAnnotationView alloc] initWithMapAnnotation:mapAnnotation];
+        
+        annotationView.enabled = YES;
+        return annotationView;
+    }
+    
+    return nil;
+}
+
 - (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay
 {
 

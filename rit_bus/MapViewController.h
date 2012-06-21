@@ -11,6 +11,7 @@
 #import "BusPoint.h"
 #import "RITBusConstants.h"
 #import "StopAnnotation.h"
+#import "StopAnnotationView.h"
 
 @interface MapViewController : UIViewController <MKMapViewDelegate> {
     

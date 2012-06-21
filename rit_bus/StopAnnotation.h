@@ -20,6 +20,7 @@
 @property(nonatomic, strong) NSString *title;
 @property(nonatomic, strong) NSString *subtitle;
 
+- (NSString *)reuseIdentifier;
 - (id)initWithCoordinate:(CLLocationCoordinate2D)location placeName:(NSString *)placeName description:(NSString *)description;
 
 @end

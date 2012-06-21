@@ -24,4 +24,9 @@
     return self;
 }
 
+- (NSString *)reuseIdentifier
+{
+    return @"StopAnnotation";
+}
+
 @end
