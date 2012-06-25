@@ -12,42 +12,25 @@
 
 #import "DetailViewController.h"
 
-#import "MapViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
-@synthesize splitViewController = _splitViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-//        MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController_iPhone" bundle:nil];
-//        self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
-//        self.window.rootViewController = self.navigationController;
-//    } else {
-//        MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController_iPad" bundle:nil];
-//        UINavigationController *masterNavigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
-//        
-//        DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController_iPad" bundle:nil];
-//        UINavigationController *detailNavigationController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
-//    	
-//    	masterViewController.detailViewController = detailViewController;
-//    	
-//        self.splitViewController = [[UISplitViewController alloc] init];
-//        self.splitViewController.delegate = detailViewController;
-//        self.splitViewController.viewControllers = [NSArray arrayWithObjects:masterNavigationController, detailNavigationController, nil];
-//        
-//        self.window.rootViewController = self.splitViewController;
-//    }
+      
+//    MapViewController *mapViewController = [[MapViewController alloc] initWithNibName:nil bundle:nil];
     
-    MapViewController *mapViewController = [[MapViewController alloc] initWithNibName:nil bundle:nil];
+//    self.navigationController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
     
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
+//    [[LocationManager sharedLocationManager] startUpdates];
     
+    NextBusController *nextBusController = [[NextBusController alloc] init];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:nextBusController];
+
     [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:(0.9529411765) green:(0.431372549) blue:(0.1294117647) alpha:1.0]];
     
     
