@@ -34,9 +34,9 @@
     
     [[LocationManager sharedLocationManager] startUpdates];
     
-    closestLocation = [[BusStopLocation alloc] initWithLatitude:[[LocationManager sharedLocationManager] latitude] andLongitude:[[LocationManager sharedLocationManager] longitude]];
+    closestLocation = [RITBusCommon stopFromLatitude:[[LocationManager sharedLocationManager] latitude] andLongitude:[[LocationManager sharedLocationManager] longitude]];
     
-    stopTitle.text = closestLocation.title;
+    stopTitle.titleLabel.text = closestLocation.title;
     
     
     NSLog(@"Latitude: %f", [[LocationManager sharedLocationManager] latitude]);

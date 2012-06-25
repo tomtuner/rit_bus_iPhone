@@ -20,7 +20,11 @@
 @synthesize description;
 
 - (id) initWithLatitude:(float)lat andLongitude:(float)lng {
-    self = [RITBusCommon stopFromLatitude:lat andLongitude:lng];
+    self = [super init];
+    if (self) {
+        latitude = lat;
+        lng = longitude;
+    }
     return self;
 }
 

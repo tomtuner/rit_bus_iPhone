@@ -8,11 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "BusStopLocation.h"
+#import "BusPoint.h"
+#import "AppDelegate.h"
+
+@class BusStopLocation;
 
 @interface RITBusCommon : NSObject {
-    
+    NSMutableDictionary *allStops;
 }
 
+@property (nonatomic, strong) NSMutableDictionary *allStops;
+
+- (NSMutableDictionary *) returnAllStops;
 + (BusStopLocation *) stopFromLatitude: (float) latitude andLongitude: (float) longitude;
 
 @end

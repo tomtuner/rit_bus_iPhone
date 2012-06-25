@@ -10,14 +10,16 @@
 #import "LocationManager.h"
 #import "BusStopLocation.h"
 
+@class BusStopLocation;
+
 @interface NextBusController : UIViewController {
-    UILabel *stopTitle;
+    UIButton *stopTitle;
     UILabel *timeUntilArrival;
     UILabel *arrivalTime;
     BusStopLocation *closestLocation;
 }
 
-@property (nonatomic, strong) IBOutlet UILabel *stopTitle;
+@property (nonatomic, strong) IBOutlet UIButton *stopTitle;
 @property (nonatomic, strong) IBOutlet UILabel *timeUntilArrival;
 @property (nonatomic, strong) IBOutlet UILabel *arrivalTime;
 @property (nonatomic, strong) BusStopLocation *closestLocation;

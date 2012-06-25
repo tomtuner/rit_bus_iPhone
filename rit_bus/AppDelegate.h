@@ -10,10 +10,15 @@
 #import "MapViewController.h"
 #import "NextBusController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    NSMutableDictionary *allStops;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) UINavigationController *navigationController;
+@property (strong, nonatomic) NSMutableDictionary *allStops;
+
+- (void) parseAllStops;
 
 @end

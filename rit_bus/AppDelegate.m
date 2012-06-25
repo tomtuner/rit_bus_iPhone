@@ -15,6 +15,8 @@
 
 @implementation AppDelegate
 
+@synthesize allStops;
+
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
 
@@ -27,18 +29,55 @@
 //    self.navigationController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
     
 //    [[LocationManager sharedLocationManager] startUpdates];
-    
+        
     NextBusController *nextBusController = [[NextBusController alloc] init];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:nextBusController];
 
     [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:(0.9529411765) green:(0.431372549) blue:(0.1294117647) alpha:1.0]];
     
+    [self parseAllStops];
     
+    NSLog(@"Count in delegate: %i", [allStops count]);
+
     
     self.window.rootViewController = self.navigationController;
     
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void) parseAllStops {
+    NSDictionary *allBusStops = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"full_list_stops" ofType:@"plist"]] objectForKey:@"full_list"];    
+    if (!allBusStops) {
+        NSLog(@"Resource not found for file: %@", @"full_list_stops.plist");
+    }
+    NSLog(@"Count: %i", [allBusStops count]);
+    
+    allStops = [NSMutableDictionary dictionary];
+    
+    float latitude;
+    float longitude;
+    NSEnumerator *enumerator = [allBusStops keyEnumerator];
+    id key;
+    BusStopLocation *point;
+    while ((key = [enumerator nextObject])) {
+        NSDictionary *stop = [allBusStops objectForKey:key];
+        NSLog(@"Key: %@", key);
+        
+        NSString *title = [stop objectForKey:@"title"];
+        
+        latitude = [[stop objectForKey:@"latitude"] doubleValue];
+        longitude = [[stop  objectForKey:@"longitude"] doubleValue];
+        
+        point = [[BusStopLocation alloc] initWithLatitude:latitude andLongitude:longitude];
+        
+        if (![title isEqualToString:@""]) {
+            NSLog(@"Locaaaaa Title: %@", title);
+            [point setTitle:title];
+        }
+        [allStops setObject:point forKey:key];
+    }
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
