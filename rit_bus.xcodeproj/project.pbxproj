@@ -36,6 +36,11 @@
 		09EA957C15927B2C00591081 /* park_point_stops_copy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09EA957B15927B2C00591081 /* park_point_stops_copy.plist */; };
 		09EA95841593583200591081 /* StopAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA95831593583200591081 /* StopAnnotation.m */; };
 		09EA95881593B28B00591081 /* StopAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA95871593B28B00591081 /* StopAnnotationView.m */; };
+		09F1E01B1598C4130075551E /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1E01A1598C4130075551E /* LocationManager.m */; };
+		09F1E0201598C5FE0075551E /* NextBusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1E01E1598C5FE0075551E /* NextBusController.m */; };
+		09F1E0211598C5FE0075551E /* NextBusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F1E01F1598C5FE0075551E /* NextBusController.xib */; };
+		09F1E0241598CF250075551E /* RITBusCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1E0231598CF240075551E /* RITBusCommon.m */; };
+		09F1E02A1598CF900075551E /* BusStopLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1E0291598CF900075551E /* BusStopLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +96,15 @@
 		09EA95831593583200591081 /* StopAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopAnnotation.m; sourceTree = "<group>"; };
 		09EA95861593B28B00591081 /* StopAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopAnnotationView.h; sourceTree = "<group>"; };
 		09EA95871593B28B00591081 /* StopAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopAnnotationView.m; sourceTree = "<group>"; };
+		09F1E0191598C4130075551E /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		09F1E01A1598C4130075551E /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		09F1E01D1598C5FE0075551E /* NextBusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextBusController.h; sourceTree = "<group>"; };
+		09F1E01E1598C5FE0075551E /* NextBusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextBusController.m; sourceTree = "<group>"; };
+		09F1E01F1598C5FE0075551E /* NextBusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextBusController.xib; sourceTree = "<group>"; };
+		09F1E0221598CF240075551E /* RITBusCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITBusCommon.h; sourceTree = "<group>"; };
+		09F1E0231598CF240075551E /* RITBusCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITBusCommon.m; sourceTree = "<group>"; };
+		09F1E0281598CF900075551E /* BusStopLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopLocation.h; sourceTree = "<group>"; };
+		09F1E0291598CF900075551E /* BusStopLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopLocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +146,11 @@
 		0934F6C01592705D00A58A04 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				09F1E0171598C3F30075551E /* Managers */,
 				0934F6C11592707C00A58A04 /* RITBusConstants.h */,
 				0934F6C21592707C00A58A04 /* RITBusConstants.m */,
+				09F1E0221598CF240075551E /* RITBusCommon.h */,
+				09F1E0231598CF240075551E /* RITBusCommon.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -174,6 +191,8 @@
 		09BE77FC1590F03B000CFCEB /* rit_bus_source */ = {
 			isa = PBXGroup;
 			children = (
+				09F1E0271598CF7A0075551E /* BusStops */,
+				09F1E01C1598C4CA0075551E /* HomeScreen */,
 				09BE783C1590FB40000CFCEB /* AppDelegate */,
 				09BE783E1590FC0E000CFCEB /* Maps */,
 				0934F6C01592705D00A58A04 /* Shared */,
@@ -247,6 +266,34 @@
 				0934F6AB15911EB000A58A04 /* RitBusMapView.xib */,
 			);
 			name = Maps;
+			sourceTree = "<group>";
+		};
+		09F1E0171598C3F30075551E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				09F1E0191598C4130075551E /* LocationManager.h */,
+				09F1E01A1598C4130075551E /* LocationManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		09F1E01C1598C4CA0075551E /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				09F1E01D1598C5FE0075551E /* NextBusController.h */,
+				09F1E01E1598C5FE0075551E /* NextBusController.m */,
+				09F1E01F1598C5FE0075551E /* NextBusController.xib */,
+			);
+			name = HomeScreen;
+			sourceTree = "<group>";
+		};
+		09F1E0271598CF7A0075551E /* BusStops */ = {
+			isa = PBXGroup;
+			children = (
+				09F1E0281598CF900075551E /* BusStopLocation.h */,
+				09F1E0291598CF900075551E /* BusStopLocation.m */,
+			);
+			name = BusStops;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +375,7 @@
 				0934F6AC15911EB000A58A04 /* RitBusMapView.xib in Resources */,
 				0934F6B815922E2100A58A04 /* park_point_stops.plist in Resources */,
 				09EA957C15927B2C00591081 /* park_point_stops_copy.plist in Resources */,
+				09F1E0211598C5FE0075551E /* NextBusController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +420,10 @@
 				0934F6C31592707C00A58A04 /* RITBusConstants.m in Sources */,
 				09EA95841593583200591081 /* StopAnnotation.m in Sources */,
 				09EA95881593B28B00591081 /* StopAnnotationView.m in Sources */,
+				09F1E01B1598C4130075551E /* LocationManager.m in Sources */,
+				09F1E0201598C5FE0075551E /* NextBusController.m in Sources */,
+				09F1E0241598CF250075551E /* RITBusCommon.m in Sources */,
+				09F1E02A1598CF900075551E /* BusStopLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
