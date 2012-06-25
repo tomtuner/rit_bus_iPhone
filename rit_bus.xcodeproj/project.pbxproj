@@ -41,6 +41,7 @@
 		09F1E0211598C5FE0075551E /* NextBusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F1E01F1598C5FE0075551E /* NextBusController.xib */; };
 		09F1E0241598CF250075551E /* RITBusCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1E0231598CF240075551E /* RITBusCommon.m */; };
 		09F1E02A1598CF900075551E /* BusStopLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1E0291598CF900075551E /* BusStopLocation.m */; };
+		09F1E0481598ED8D0075551E /* full_list_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F1E0471598ED8D0075551E /* full_list_stops.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		09F1E0231598CF240075551E /* RITBusCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITBusCommon.m; sourceTree = "<group>"; };
 		09F1E0281598CF900075551E /* BusStopLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopLocation.h; sourceTree = "<group>"; };
 		09F1E0291598CF900075551E /* BusStopLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopLocation.m; sourceTree = "<group>"; };
+		09F1E0471598ED8D0075551E /* full_list_stops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = full_list_stops.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				0934F6B715922E2100A58A04 /* park_point_stops.plist */,
 				09EA957B15927B2C00591081 /* park_point_stops_copy.plist */,
+				09F1E0471598ED8D0075551E /* full_list_stops.plist */,
 			);
 			name = rit_bus_resources;
 			path = rit_bus;
@@ -376,6 +379,7 @@
 				0934F6B815922E2100A58A04 /* park_point_stops.plist in Resources */,
 				09EA957C15927B2C00591081 /* park_point_stops_copy.plist in Resources */,
 				09F1E0211598C5FE0075551E /* NextBusController.xib in Resources */,
+				09F1E0481598ED8D0075551E /* full_list_stops.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
