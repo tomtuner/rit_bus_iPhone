@@ -34,7 +34,7 @@
     
     [[LocationManager sharedLocationManager] startUpdates];
     
-    closestLocation = [RITBusCommon stopFromLatitude:[[LocationManager sharedLocationManager] latitude] andLongitude:[[LocationManager sharedLocationManager] longitude]];
+    closestLocation = [RITBusCommon closestStopFromLatitude:[[LocationManager sharedLocationManager] latitude] andLongitude:[[LocationManager sharedLocationManager] longitude]];
     
     stopTitle.titleLabel.text = closestLocation.title;
     

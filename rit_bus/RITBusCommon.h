@@ -20,6 +20,6 @@
 @property (nonatomic, strong) NSMutableDictionary *allStops;
 
 - (NSMutableDictionary *) returnAllStops;
-+ (BusStopLocation *) stopFromLatitude: (float) latitude andLongitude: (float) longitude;
++ (BusStopLocation *) closestStopFromLatitude: (float) latitude andLongitude: (float) longitude;
 
 @end

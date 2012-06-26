@@ -58,6 +58,33 @@
 			<key>longitude</key>
 			<real>-77.667632</real>
 		</dict>
+		<key>perkins_green</key>
+		<dict>
+			<key>title</key>
+			<string>Perkins Green</string>
+			<key>latitude</key>
+			<real>43.086179</real>
+			<key>longitude</key>
+			<real>-77.659961</real>
+		</dict>
+		<key>colony_manor</key>
+		<dict>
+			<key>title</key>
+			<string>Colony Manor</string>
+			<key>latitude</key>
+			<real>43.083016</real>
+			<key>longitude</key>
+			<real>-77.658413</real>
+		</dict>
+		<key>province</key>
+		<dict>
+			<key>title</key>
+			<string>Province</string>
+			<key>latitude</key>
+			<real>43.086616</real>
+			<key>longitude</key>
+			<real>-77.65604500000001</real>
+		</dict>
 	</dict>
 </dict>
 </plist>

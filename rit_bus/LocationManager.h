@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
-static float SIMULATE_LATITUDE  = 43.083112;
-static float SIMULATE_LONGITUDE = -77.675909;
+static float SIMULATE_LATITUDE  = 43.085;
+static float SIMULATE_LONGITUDE = -77.662439;
 
 @interface LocationManager : NSObject <CLLocationManagerDelegate> {
     CLLocationManager * locationManager;
