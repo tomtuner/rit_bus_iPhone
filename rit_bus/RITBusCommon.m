@@ -15,6 +15,8 @@
 + (BOOL) pointInTriangleWithOriginX: (float) xOrigin andYOrigin: (float) yOrigin withXPoints: (float[]) polyX andYPoints: (float[]) polyY
                      usingLatitude :(float) lat andLongitude: (float) lng;
 
++ (BOOL) withinProvinceBoxesWithLatitude:(float)latitude andLongitude:(float)longitude;
+
 @end
 
 @implementation RITBusCommon
@@ -124,6 +126,33 @@
     return NO;
 }
 
++ (BOOL) withinProvinceBoxesWithLatitude:(float)latitude andLongitude:(float)longitude {
+    
+    NSDictionary *provinceGeoBoxes = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"province_geo_boxes" ofType:@"plist"]] objectForKey:@"province_geo_boxes"];    
+    if (!provinceGeoBoxes) {
+        NSLog(@"Resource not found for file: %@", @"province_geo_boxes.plist");
+    }
+    
+    NSEnumerator *enumerator = [provinceGeoBoxes keyEnumerator];
+    id key;
+    
+    while ((key = [enumerator nextObject])) {
+        NSDictionary *geoBox = [provinceGeoBoxes objectForKey:key];
+        float minLat = [[geoBox objectForKey:@"minLat"] floatValue];
+        float maxLat = [[geoBox objectForKey:@"maxLat"] floatValue];
+        float minLong = [[geoBox objectForKey:@"minLong"] floatValue];
+        float maxLong = [[geoBox objectForKey:@"maxLong"] floatValue];
+        
+        
+
+        if ((latitude < maxLat) && (latitude > minLat) && (longitude > minLong) && (longitude < maxLong)) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+
 + (BusStopLocation *) closestStopFromLatitude:(float)latitude andLongitude:(float)longitude {
 
     NSMutableDictionary *stops = [(AppDelegate *)[[UIApplication sharedApplication] delegate] allStops];
@@ -152,6 +181,16 @@
         BusStopLocation *lo = (BusStopLocation *)[stops objectForKey:@"colony_manor"];
         NSLog(@"Loc Title: %@", [lo title]);
         return lo;
+    }else if (([self withinProvinceBoxesWithLatitude:latitude andLongitude:longitude])) {
+        BusStopLocation *lo = (BusStopLocation *)[stops objectForKey:@"province"];
+        NSLog(@"Loc Title: %@", [lo title]);
+        return lo;
+    }else {
+        NSLog(@"No Stop Located");
+        NSLog(@"Defaulting to Gleason Circle");
+        BusStopLocation *lo = (BusStopLocation *)[stops objectForKey:@"gleason_circle"];
+        NSLog(@"Loc Title: %@", [lo title]);
+        return lo;
     }
     
     // For province triangle
@@ -170,7 +209,7 @@
     // Need to calculate point in triangle for park point and province stops
     
     
-    NSLog(@"No Stop Located");
+    
     return nil;
     
 }
