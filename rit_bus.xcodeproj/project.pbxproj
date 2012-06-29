@@ -43,6 +43,8 @@
 		09F1E02A1598CF900075551E /* BusStopLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1E0291598CF900075551E /* BusStopLocation.m */; };
 		09F1E0481598ED8D0075551E /* full_list_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F1E0471598ED8D0075551E /* full_list_stops.plist */; };
 		09F1E116159CBB520075551E /* province_geo_boxes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F1E115159CBB520075551E /* province_geo_boxes.plist */; };
+		09F325EB159E3F290004BBF4 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F325EA159E3F290004BBF4 /* Theme.m */; };
+		09F325EE159E40A10004BBF4 /* RITTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F325ED159E40A10004BBF4 /* RITTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,10 @@
 		09F1E0291598CF900075551E /* BusStopLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopLocation.m; sourceTree = "<group>"; };
 		09F1E0471598ED8D0075551E /* full_list_stops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = full_list_stops.plist; sourceTree = "<group>"; };
 		09F1E115159CBB520075551E /* province_geo_boxes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = province_geo_boxes.plist; sourceTree = "<group>"; };
+		09F325E9159E3F290004BBF4 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		09F325EA159E3F290004BBF4 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
+		09F325EC159E40A10004BBF4 /* RITTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITTheme.h; sourceTree = "<group>"; };
+		09F325ED159E40A10004BBF4 /* RITTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITTheme.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,9 +203,10 @@
 		09BE77FC1590F03B000CFCEB /* rit_bus_source */ = {
 			isa = PBXGroup;
 			children = (
-				09F1E0271598CF7A0075551E /* BusStops */,
-				09F1E01C1598C4CA0075551E /* HomeScreen */,
 				09BE783C1590FB40000CFCEB /* AppDelegate */,
+				09F1E0271598CF7A0075551E /* BusStops */,
+				09F325E7159E3E460004BBF4 /* Visual */,
+				09F1E01C1598C4CA0075551E /* HomeScreen */,
 				09BE783E1590FC0E000CFCEB /* Maps */,
 				0934F6C01592705D00A58A04 /* Shared */,
 				09BE78081590F03B000CFCEB /* MasterViewController.h */,
@@ -300,6 +307,17 @@
 				09F1E0291598CF900075551E /* BusStopLocation.m */,
 			);
 			name = BusStops;
+			sourceTree = "<group>";
+		};
+		09F325E7159E3E460004BBF4 /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				09F325E9159E3F290004BBF4 /* Theme.h */,
+				09F325EA159E3F290004BBF4 /* Theme.m */,
+				09F325EC159E40A10004BBF4 /* RITTheme.h */,
+				09F325ED159E40A10004BBF4 /* RITTheme.m */,
+			);
+			name = Visual;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +450,8 @@
 				09F1E0201598C5FE0075551E /* NextBusController.m in Sources */,
 				09F1E0241598CF250075551E /* RITBusCommon.m in Sources */,
 				09F1E02A1598CF900075551E /* BusStopLocation.m in Sources */,
+				09F325EB159E3F290004BBF4 /* Theme.m in Sources */,
+				09F325EE159E40A10004BBF4 /* RITTheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
