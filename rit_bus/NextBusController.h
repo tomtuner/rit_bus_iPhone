@@ -24,4 +24,6 @@
 @property (nonatomic, strong) IBOutlet UILabel *arrivalTime;
 @property (nonatomic, strong) BusStopLocation *closestLocation;
 
+- (IBAction)showLiveBusMap:(id)sender;
+
 @end

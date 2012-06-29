@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MapViewController.h"
 #import "NextBusController.h"
+#import "Theme.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     NSMutableDictionary *allStops;

@@ -23,22 +23,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-      
-//    MapViewController *mapViewController = [[MapViewController alloc] initWithNibName:nil bundle:nil];
-    
-//    self.navigationController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
-    
-//    [[LocationManager sharedLocationManager] startUpdates];
         
     NextBusController *nextBusController = [[NextBusController alloc] init];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:nextBusController];
 
-    [self.navigationController.navigationBar setTintColor:[UIColor colorWithRed:(0.9529411765) green:(0.431372549) blue:(0.1294117647) alpha:1.0]];
+    // Set all of the appearance customizations for the app
+    [ThemeManager customizeAppAppearance];
     
     [self parseAllStops];
-    
-    NSLog(@"Count in delegate: %i", [allStops count]);
-
     
     self.window.rootViewController = self.navigationController;
     

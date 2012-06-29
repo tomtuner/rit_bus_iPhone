@@ -28,19 +28,42 @@
     return self;
 }
 
+-(void) showLiveBusMap:(id)sender {
+    MapViewController *mapController = [[MapViewController alloc] init];
+    [self.navigationController pushViewController:mapController animated:YES];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [ThemeManager customizeView:self.view];
     
     [[LocationManager sharedLocationManager] startUpdates];
     
     closestLocation = [RITBusCommon closestStopFromLatitude:[[LocationManager sharedLocationManager] latitude] andLongitude:[[LocationManager sharedLocationManager] longitude]];
     
-    stopTitle.titleLabel.text = closestLocation.title;
+    [stopTitle setTitle:closestLocation.title forState:UIControlStateNormal];
     
+    [self setTitle:@"R . I . T . "];
     
     NSLog(@"Latitude: %f", [[LocationManager sharedLocationManager] latitude]);
     NSLog(@"Longitude: %f", [[LocationManager sharedLocationManager] longitude]);
+        
+    [UIView animateWithDuration:2.0 delay: 0.0 options: UIViewAnimationOptionCurveEaseIn 
+     animations:^{
+        timeUntilArrival.alpha = 0.0;
+    }
+                     completion:^(BOOL finished) {
+     [UIView animateWithDuration:2.0
+                           delay: 0.0
+                         options:UIViewAnimationOptionCurveEaseOut
+                      animations:^{
+                          timeUntilArrival.text = @"37 minutes";
+                          timeUntilArrival.alpha = 1.0;
+                      }
+                      completion:nil];
+     }];
 
     // Do any additional setup after loading the view from its nib.
 }
