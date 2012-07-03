@@ -45,6 +45,8 @@
 		09F1E116159CBB520075551E /* province_geo_boxes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F1E115159CBB520075551E /* province_geo_boxes.plist */; };
 		09F325EB159E3F290004BBF4 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F325EA159E3F290004BBF4 /* Theme.m */; };
 		09F325EE159E40A10004BBF4 /* RITTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F325ED159E40A10004BBF4 /* RITTheme.m */; };
+		09F325F815A20ED90004BBF4 /* map_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F325F615A20ED90004BBF4 /* map_button.png */; };
+		09F325F915A20ED90004BBF4 /* map_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F325F715A20ED90004BBF4 /* map_button@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,8 @@
 		09F325EA159E3F290004BBF4 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
 		09F325EC159E40A10004BBF4 /* RITTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITTheme.h; sourceTree = "<group>"; };
 		09F325ED159E40A10004BBF4 /* RITTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITTheme.m; sourceTree = "<group>"; };
+		09F325F615A20ED90004BBF4 /* map_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_button.png; path = images/next_bus_screen/map_button.png; sourceTree = SOURCE_ROOT; };
+		09F325F715A20ED90004BBF4 /* map_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map_button@2x.png"; path = "images/next_bus_screen/map_button@2x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,10 +150,8 @@
 		0934F6B515922E0400A58A04 /* rit_bus_resources */ = {
 			isa = PBXGroup;
 			children = (
-				0934F6B715922E2100A58A04 /* park_point_stops.plist */,
-				09EA957B15927B2C00591081 /* park_point_stops_copy.plist */,
-				09F1E0471598ED8D0075551E /* full_list_stops.plist */,
-				09F1E115159CBB520075551E /* province_geo_boxes.plist */,
+				09F325F515A20EC90004BBF4 /* images */,
+				09F325F315A20EBD0004BBF4 /* plists */,
 			);
 			name = rit_bus_resources;
 			path = rit_bus;
@@ -320,6 +322,26 @@
 			name = Visual;
 			sourceTree = "<group>";
 		};
+		09F325F315A20EBD0004BBF4 /* plists */ = {
+			isa = PBXGroup;
+			children = (
+				0934F6B715922E2100A58A04 /* park_point_stops.plist */,
+				09EA957B15927B2C00591081 /* park_point_stops_copy.plist */,
+				09F1E0471598ED8D0075551E /* full_list_stops.plist */,
+				09F1E115159CBB520075551E /* province_geo_boxes.plist */,
+			);
+			name = plists;
+			sourceTree = "<group>";
+		};
+		09F325F515A20EC90004BBF4 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				09F325F615A20ED90004BBF4 /* map_button.png */,
+				09F325F715A20ED90004BBF4 /* map_button@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -402,6 +424,8 @@
 				09F1E0211598C5FE0075551E /* NextBusController.xib in Resources */,
 				09F1E0481598ED8D0075551E /* full_list_stops.plist in Resources */,
 				09F1E116159CBB520075551E /* province_geo_boxes.plist in Resources */,
+				09F325F815A20ED90004BBF4 /* map_button.png in Resources */,
+				09F325F915A20ED90004BBF4 /* map_button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
