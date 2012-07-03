@@ -18,6 +18,8 @@
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *description;
+@property (nonatomic) float latitude;
+@property (nonatomic) float longitude;
 
 - (id) initWithLatitude:(float) lat andLongitude: (float) lng;
 

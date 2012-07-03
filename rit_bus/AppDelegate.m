@@ -30,6 +30,8 @@
     // Set all of the appearance customizations for the app
     [ThemeManager customizeAppAppearance];
     
+    [[LocationManager sharedLocationManager] startUpdates];
+    
     [self parseAllStops];
     
     self.window.rootViewController = self.navigationController;

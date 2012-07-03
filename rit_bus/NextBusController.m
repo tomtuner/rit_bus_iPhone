@@ -38,17 +38,12 @@
     [super viewDidLoad];
     
     [ThemeManager customizeView:self.view];
-    
-    [[LocationManager sharedLocationManager] startUpdates];
-    
+        
     closestLocation = [RITBusCommon closestStopFromLatitude:[[LocationManager sharedLocationManager] latitude] andLongitude:[[LocationManager sharedLocationManager] longitude]];
     
     [stopTitle setTitle:closestLocation.title forState:UIControlStateNormal];
     
-    [self setTitle:@"R . I . T . "];
-    
-    NSLog(@"Latitude: %f", [[LocationManager sharedLocationManager] latitude]);
-    NSLog(@"Longitude: %f", [[LocationManager sharedLocationManager] longitude]);
+    [self setTitle:@"R. I. T. "];
         
     [UIView animateWithDuration:2.0 delay: 0.0 options: UIViewAnimationOptionCurveEaseIn 
      animations:^{
