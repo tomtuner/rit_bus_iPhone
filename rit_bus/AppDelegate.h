@@ -10,6 +10,7 @@
 #import "MapViewController.h"
 #import "NextBusController.h"
 #import "Theme.h"
+#import "RITTestController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     NSMutableDictionary *allStops;
