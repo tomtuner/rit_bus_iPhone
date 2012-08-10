@@ -15,6 +15,70 @@
 		0934F6B815922E2100A58A04 /* park_point_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0934F6B715922E2100A58A04 /* park_point_stops.plist */; };
 		0934F6BF15926B3B00A58A04 /* BusPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934F6BE15926B3B00A58A04 /* BusPoint.m */; };
 		0934F6C31592707C00A58A04 /* RITBusConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934F6C21592707C00A58A04 /* RITBusConstants.m */; };
+		099DCA5715D546B400DAB937 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE78021590F03B000CFCEB /* main.m */; };
+		099DCA5815D546B400DAB937 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE78061590F03B000CFCEB /* AppDelegate.m */; };
+		099DCA5915D546B400DAB937 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE78091590F03B000CFCEB /* MasterViewController.m */; };
+		099DCA5A15D546B400DAB937 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE780C1590F03B000CFCEB /* DetailViewController.m */; };
+		099DCA5B15D546B400DAB937 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934F69B159113D700A58A04 /* MapViewController.m */; };
+		099DCA5C15D546B400DAB937 /* RitBusMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934F6A915911E9F00A58A04 /* RitBusMapView.m */; };
+		099DCA5D15D546B400DAB937 /* BusPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934F6BE15926B3B00A58A04 /* BusPoint.m */; };
+		099DCA5E15D546B400DAB937 /* RITBusConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0934F6C21592707C00A58A04 /* RITBusConstants.m */; };
+		099DCA5F15D546B400DAB937 /* StopAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA95831593583200591081 /* StopAnnotation.m */; };
+		099DCA6015D546B400DAB937 /* StopAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA95871593B28B00591081 /* StopAnnotationView.m */; };
+		099DCA6115D546B400DAB937 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1E01A1598C4130075551E /* LocationManager.m */; };
+		099DCA6215D546B400DAB937 /* NextBusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1E01E1598C5FE0075551E /* NextBusController.m */; };
+		099DCA6315D546B400DAB937 /* RITBusCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1E0231598CF240075551E /* RITBusCommon.m */; };
+		099DCA6415D546B400DAB937 /* BusStopLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F1E0291598CF900075551E /* BusStopLocation.m */; };
+		099DCA6515D546B400DAB937 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F325EA159E3F290004BBF4 /* Theme.m */; };
+		099DCA6615D546B400DAB937 /* RITTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F325ED159E40A10004BBF4 /* RITTheme.m */; };
+		099DCA6815D546B400DAB937 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0934F6A01591178C00A58A04 /* CoreLocation.framework */; };
+		099DCA6915D546B400DAB937 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE784915910671000CFCEB /* MapKit.framework */; };
+		099DCA6A15D546B400DAB937 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F61590F03B000CFCEB /* UIKit.framework */; };
+		099DCA6B15D546B400DAB937 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F81590F03B000CFCEB /* Foundation.framework */; };
+		099DCA6C15D546B400DAB937 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77FA1590F03B000CFCEB /* CoreGraphics.framework */; };
+		099DCA6E15D546B400DAB937 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09BE77FF1590F03B000CFCEB /* InfoPlist.strings */; };
+		099DCA6F15D546B400DAB937 /* MasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BE780E1590F03B000CFCEB /* MasterViewController_iPhone.xib */; };
+		099DCA7015D546B400DAB937 /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78111590F03B000CFCEB /* MasterViewController_iPad.xib */; };
+		099DCA7115D546B400DAB937 /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78141590F03B000CFCEB /* DetailViewController_iPhone.xib */; };
+		099DCA7215D546B400DAB937 /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78171590F03B000CFCEB /* DetailViewController_iPad.xib */; };
+		099DCA7315D546B400DAB937 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0934F69C159113D700A58A04 /* MapViewController.xib */; };
+		099DCA7415D546B400DAB937 /* RitBusMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0934F6AB15911EB000A58A04 /* RitBusMapView.xib */; };
+		099DCA7515D546B400DAB937 /* park_point_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0934F6B715922E2100A58A04 /* park_point_stops.plist */; };
+		099DCA7615D546B400DAB937 /* park_point_stops_copy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09EA957B15927B2C00591081 /* park_point_stops_copy.plist */; };
+		099DCA7715D546B400DAB937 /* NextBusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F1E01F1598C5FE0075551E /* NextBusController.xib */; };
+		099DCA7815D546B400DAB937 /* full_list_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F1E0471598ED8D0075551E /* full_list_stops.plist */; };
+		099DCA7915D546B400DAB937 /* province_geo_boxes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F1E115159CBB520075551E /* province_geo_boxes.plist */; };
+		099DCA7A15D546B400DAB937 /* map_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F325F615A20ED90004BBF4 /* map_button.png */; };
+		099DCA7B15D546B400DAB937 /* map_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F325F715A20ED90004BBF4 /* map_button@2x.png */; };
+		099DCA8715D54CDF00DAB937 /* RITTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099DCA8615D54CDF00DAB937 /* RITTestController.m */; };
+		099DCB6315D551E200DAB937 /* LoadableCategory.h in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB4915D551E200DAB937 /* LoadableCategory.h */; };
+		099DCB6415D551E200DAB937 /* CGGeometry-KIFAdditions.h in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB4A15D551E200DAB937 /* CGGeometry-KIFAdditions.h */; };
+		099DCB6515D551E200DAB937 /* CGGeometry-KIFAdditions.m in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB4B15D551E200DAB937 /* CGGeometry-KIFAdditions.m */; };
+		099DCB6615D551E200DAB937 /* NSFileManager-KIFAdditions.h in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB4C15D551E200DAB937 /* NSFileManager-KIFAdditions.h */; };
+		099DCB6715D551E200DAB937 /* NSFileManager-KIFAdditions.m in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB4D15D551E200DAB937 /* NSFileManager-KIFAdditions.m */; };
+		099DCB6815D551E300DAB937 /* UIAccessibilityElement-KIFAdditions.h in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB4E15D551E200DAB937 /* UIAccessibilityElement-KIFAdditions.h */; };
+		099DCB6915D551E300DAB937 /* UIAccessibilityElement-KIFAdditions.m in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB4F15D551E200DAB937 /* UIAccessibilityElement-KIFAdditions.m */; };
+		099DCB6A15D551E300DAB937 /* UIApplication-KIFAdditions.h in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5015D551E200DAB937 /* UIApplication-KIFAdditions.h */; };
+		099DCB6B15D551E300DAB937 /* UIApplication-KIFAdditions.m in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5115D551E200DAB937 /* UIApplication-KIFAdditions.m */; };
+		099DCB6C15D551E300DAB937 /* UIScrollView-KIFAdditions.h in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5215D551E200DAB937 /* UIScrollView-KIFAdditions.h */; };
+		099DCB6D15D551E300DAB937 /* UIScrollView-KIFAdditions.m in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5315D551E200DAB937 /* UIScrollView-KIFAdditions.m */; };
+		099DCB6E15D551E300DAB937 /* UITouch-KIFAdditions.h in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5415D551E200DAB937 /* UITouch-KIFAdditions.h */; };
+		099DCB6F15D551E300DAB937 /* UITouch-KIFAdditions.m in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5515D551E200DAB937 /* UITouch-KIFAdditions.m */; };
+		099DCB7015D551E300DAB937 /* UIView-KIFAdditions.h in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5615D551E200DAB937 /* UIView-KIFAdditions.h */; };
+		099DCB7115D551E300DAB937 /* UIView-KIFAdditions.m in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5715D551E200DAB937 /* UIView-KIFAdditions.m */; };
+		099DCB7215D551E300DAB937 /* UIWindow-KIFAdditions.h in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5815D551E200DAB937 /* UIWindow-KIFAdditions.h */; };
+		099DCB7315D551E300DAB937 /* UIWindow-KIFAdditions.m in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5915D551E200DAB937 /* UIWindow-KIFAdditions.m */; };
+		099DCB7415D551E300DAB937 /* KIF-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5B15D551E200DAB937 /* KIF-Prefix.pch */; };
+		099DCB7515D551E300DAB937 /* KIFTestController.h in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5C15D551E200DAB937 /* KIFTestController.h */; };
+		099DCB7615D551E300DAB937 /* KIFTestController.m in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5D15D551E200DAB937 /* KIFTestController.m */; };
+		099DCB7715D551E300DAB937 /* KIFTestScenario.h in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5E15D551E200DAB937 /* KIFTestScenario.h */; };
+		099DCB7815D551E300DAB937 /* KIFTestScenario.m in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB5F15D551E200DAB937 /* KIFTestScenario.m */; };
+		099DCB7915D551E300DAB937 /* KIFTestStep.h in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB6015D551E200DAB937 /* KIFTestStep.h */; };
+		099DCB7A15D551E300DAB937 /* KIFTestStep.m in Resources */ = {isa = PBXBuildFile; fileRef = 099DCB6115D551E200DAB937 /* KIFTestStep.m */; };
+		099DCB7F15D553A500DAB937 /* KIFTestScenario+RITAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099DCB7E15D553A500DAB937 /* KIFTestScenario+RITAdditions.m */; };
+		099DCB8015D554B000DAB937 /* RITTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099DCA8615D54CDF00DAB937 /* RITTestController.m */; };
+		099DCB8115D554B000DAB937 /* KIFTestScenario+RITAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 099DCB7E15D553A500DAB937 /* KIFTestScenario+RITAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		099DCB8615D557DA00DAB937 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 099DCB8515D557D900DAB937 /* libKIF.a */; };
 		09BE77F71590F03B000CFCEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F61590F03B000CFCEB /* UIKit.framework */; };
 		09BE77F91590F03B000CFCEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F81590F03B000CFCEB /* Foundation.framework */; };
 		09BE77FB1590F03B000CFCEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77FA1590F03B000CFCEB /* CoreGraphics.framework */; };
@@ -27,11 +91,6 @@
 		09BE78131590F03B000CFCEB /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78111590F03B000CFCEB /* MasterViewController_iPad.xib */; };
 		09BE78161590F03B000CFCEB /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78141590F03B000CFCEB /* DetailViewController_iPhone.xib */; };
 		09BE78191590F03B000CFCEB /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78171590F03B000CFCEB /* DetailViewController_iPad.xib */; };
-		09BE78211590F03B000CFCEB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE78201590F03B000CFCEB /* SenTestingKit.framework */; };
-		09BE78221590F03B000CFCEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F61590F03B000CFCEB /* UIKit.framework */; };
-		09BE78231590F03B000CFCEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE77F81590F03B000CFCEB /* Foundation.framework */; };
-		09BE782B1590F03B000CFCEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09BE78291590F03B000CFCEB /* InfoPlist.strings */; };
-		09BE782E1590F03B000CFCEB /* rit_busTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE782D1590F03B000CFCEB /* rit_busTests.m */; };
 		09BE784A15910671000CFCEB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE784915910671000CFCEB /* MapKit.framework */; };
 		09EA957C15927B2C00591081 /* park_point_stops_copy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09EA957B15927B2C00591081 /* park_point_stops_copy.plist */; };
 		09EA95841593583200591081 /* StopAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EA95831593583200591081 /* StopAnnotation.m */; };
@@ -49,16 +108,6 @@
 		09F325F915A20ED90004BBF4 /* map_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F325F715A20ED90004BBF4 /* map_button@2x.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		09BE78241590F03B000CFCEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 09BE77E91590F03B000CFCEB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 09BE77F11590F03B000CFCEB;
-			remoteInfo = rit_bus;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0934F69A159113D700A58A04 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		0934F69B159113D700A58A04 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
@@ -72,6 +121,37 @@
 		0934F6BE15926B3B00A58A04 /* BusPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPoint.m; sourceTree = "<group>"; };
 		0934F6C11592707C00A58A04 /* RITBusConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITBusConstants.h; sourceTree = "<group>"; };
 		0934F6C21592707C00A58A04 /* RITBusConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITBusConstants.m; sourceTree = "<group>"; };
+		099DCA7F15D546B400DAB937 /* RIT Bus (Integration Tests).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RIT Bus (Integration Tests).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		099DCA8115D546B400DAB937 /* rit_bus copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "rit_bus copy-Info.plist"; path = "/Users/thomasde/Development/iOS/rit_bus/rit_bus copy-Info.plist"; sourceTree = "<absolute>"; };
+		099DCA8515D54CDF00DAB937 /* RITTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITTestController.h; sourceTree = "<group>"; };
+		099DCA8615D54CDF00DAB937 /* RITTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITTestController.m; sourceTree = "<group>"; };
+		099DCB4915D551E200DAB937 /* LoadableCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = LoadableCategory.h; sourceTree = "<group>"; };
+		099DCB4A15D551E200DAB937 /* CGGeometry-KIFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "CGGeometry-KIFAdditions.h"; sourceTree = "<group>"; };
+		099DCB4B15D551E200DAB937 /* CGGeometry-KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "CGGeometry-KIFAdditions.m"; sourceTree = "<group>"; };
+		099DCB4C15D551E200DAB937 /* NSFileManager-KIFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "NSFileManager-KIFAdditions.h"; sourceTree = "<group>"; };
+		099DCB4D15D551E200DAB937 /* NSFileManager-KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "NSFileManager-KIFAdditions.m"; sourceTree = "<group>"; };
+		099DCB4E15D551E200DAB937 /* UIAccessibilityElement-KIFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "UIAccessibilityElement-KIFAdditions.h"; sourceTree = "<group>"; };
+		099DCB4F15D551E200DAB937 /* UIAccessibilityElement-KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "UIAccessibilityElement-KIFAdditions.m"; sourceTree = "<group>"; };
+		099DCB5015D551E200DAB937 /* UIApplication-KIFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "UIApplication-KIFAdditions.h"; sourceTree = "<group>"; };
+		099DCB5115D551E200DAB937 /* UIApplication-KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "UIApplication-KIFAdditions.m"; sourceTree = "<group>"; };
+		099DCB5215D551E200DAB937 /* UIScrollView-KIFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "UIScrollView-KIFAdditions.h"; sourceTree = "<group>"; };
+		099DCB5315D551E200DAB937 /* UIScrollView-KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "UIScrollView-KIFAdditions.m"; sourceTree = "<group>"; };
+		099DCB5415D551E200DAB937 /* UITouch-KIFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "UITouch-KIFAdditions.h"; sourceTree = "<group>"; };
+		099DCB5515D551E200DAB937 /* UITouch-KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "UITouch-KIFAdditions.m"; sourceTree = "<group>"; };
+		099DCB5615D551E200DAB937 /* UIView-KIFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "UIView-KIFAdditions.h"; sourceTree = "<group>"; };
+		099DCB5715D551E200DAB937 /* UIView-KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "UIView-KIFAdditions.m"; sourceTree = "<group>"; };
+		099DCB5815D551E200DAB937 /* UIWindow-KIFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "UIWindow-KIFAdditions.h"; sourceTree = "<group>"; };
+		099DCB5915D551E200DAB937 /* UIWindow-KIFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "UIWindow-KIFAdditions.m"; sourceTree = "<group>"; };
+		099DCB5B15D551E200DAB937 /* KIF-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = "KIF-Prefix.pch"; sourceTree = "<group>"; };
+		099DCB5C15D551E200DAB937 /* KIFTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = KIFTestController.h; sourceTree = "<group>"; };
+		099DCB5D15D551E200DAB937 /* KIFTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = KIFTestController.m; sourceTree = "<group>"; };
+		099DCB5E15D551E200DAB937 /* KIFTestScenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = KIFTestScenario.h; sourceTree = "<group>"; };
+		099DCB5F15D551E200DAB937 /* KIFTestScenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = KIFTestScenario.m; sourceTree = "<group>"; };
+		099DCB6015D551E200DAB937 /* KIFTestStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = KIFTestStep.h; sourceTree = "<group>"; };
+		099DCB6115D551E200DAB937 /* KIFTestStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = KIFTestStep.m; sourceTree = "<group>"; };
+		099DCB7D15D553A500DAB937 /* KIFTestScenario+RITAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KIFTestScenario+RITAdditions.h"; sourceTree = "<group>"; };
+		099DCB7E15D553A500DAB937 /* KIFTestScenario+RITAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestScenario+RITAdditions.m"; sourceTree = "<group>"; };
+		099DCB8515D557D900DAB937 /* libKIF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKIF.a; path = "../../../Library/Developer/Xcode/DerivedData/rit_bus-haepjgmjwtkfqffysgqcehgqutco/Build/Products/Debug-iphonesimulator/libKIF.a"; sourceTree = "<group>"; };
 		09BE77F21590F03B000CFCEB /* rit_bus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rit_bus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BE77F61590F03B000CFCEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09BE77F81590F03B000CFCEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,12 +170,7 @@
 		09BE78121590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
 		09BE78151590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		09BE78181590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
-		09BE781F1590F03B000CFCEB /* rit_busTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rit_busTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BE78201590F03B000CFCEB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		09BE78281590F03B000CFCEB /* rit_busTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "rit_busTests-Info.plist"; sourceTree = "<group>"; };
-		09BE782A1590F03B000CFCEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		09BE782C1590F03B000CFCEB /* rit_busTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rit_busTests.h; sourceTree = "<group>"; };
-		09BE782D1590F03B000CFCEB /* rit_busTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rit_busTests.m; sourceTree = "<group>"; };
 		09BE784915910671000CFCEB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		09EA957B15927B2C00591081 /* park_point_stops_copy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = park_point_stops_copy.plist; sourceTree = "<group>"; };
 		09EA95821593583200591081 /* StopAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopAnnotation.h; sourceTree = "<group>"; };
@@ -122,6 +197,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		099DCA6715D546B400DAB937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099DCA6815D546B400DAB937 /* CoreLocation.framework in Frameworks */,
+				099DCA6915D546B400DAB937 /* MapKit.framework in Frameworks */,
+				099DCA6A15D546B400DAB937 /* UIKit.framework in Frameworks */,
+				099DCA6B15D546B400DAB937 /* Foundation.framework in Frameworks */,
+				099DCA6C15D546B400DAB937 /* CoreGraphics.framework in Frameworks */,
+				099DCB8615D557DA00DAB937 /* libKIF.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09BE77EF1590F03B000CFCEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,16 +219,6 @@
 				09BE77F71590F03B000CFCEB /* UIKit.framework in Frameworks */,
 				09BE77F91590F03B000CFCEB /* Foundation.framework in Frameworks */,
 				09BE77FB1590F03B000CFCEB /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09BE781B1590F03B000CFCEB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09BE78211590F03B000CFCEB /* SenTestingKit.framework in Frameworks */,
-				09BE78221590F03B000CFCEB /* UIKit.framework in Frameworks */,
-				09BE78231590F03B000CFCEB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,14 +247,76 @@
 			name = Shared;
 			sourceTree = "<group>";
 		};
+		099DCA8415D54CBB00DAB937 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				099DCA8515D54CDF00DAB937 /* RITTestController.h */,
+				099DCA8615D54CDF00DAB937 /* RITTestController.m */,
+				099DCB7D15D553A500DAB937 /* KIFTestScenario+RITAdditions.h */,
+				099DCB7E15D553A500DAB937 /* KIFTestScenario+RITAdditions.m */,
+			);
+			name = Testing;
+			path = rit_bus;
+			sourceTree = "<group>";
+		};
+		099DCB4815D551D600DAB937 /* KIF */ = {
+			isa = PBXGroup;
+			children = (
+				099DCB5A15D551E200DAB937 /* Additions */,
+				099DCB6215D551E200DAB937 /* Classes */,
+			);
+			name = KIF;
+			sourceTree = "<group>";
+		};
+		099DCB5A15D551E200DAB937 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				099DCB4915D551E200DAB937 /* LoadableCategory.h */,
+				099DCB4A15D551E200DAB937 /* CGGeometry-KIFAdditions.h */,
+				099DCB4B15D551E200DAB937 /* CGGeometry-KIFAdditions.m */,
+				099DCB4C15D551E200DAB937 /* NSFileManager-KIFAdditions.h */,
+				099DCB4D15D551E200DAB937 /* NSFileManager-KIFAdditions.m */,
+				099DCB4E15D551E200DAB937 /* UIAccessibilityElement-KIFAdditions.h */,
+				099DCB4F15D551E200DAB937 /* UIAccessibilityElement-KIFAdditions.m */,
+				099DCB5015D551E200DAB937 /* UIApplication-KIFAdditions.h */,
+				099DCB5115D551E200DAB937 /* UIApplication-KIFAdditions.m */,
+				099DCB5215D551E200DAB937 /* UIScrollView-KIFAdditions.h */,
+				099DCB5315D551E200DAB937 /* UIScrollView-KIFAdditions.m */,
+				099DCB5415D551E200DAB937 /* UITouch-KIFAdditions.h */,
+				099DCB5515D551E200DAB937 /* UITouch-KIFAdditions.m */,
+				099DCB5615D551E200DAB937 /* UIView-KIFAdditions.h */,
+				099DCB5715D551E200DAB937 /* UIView-KIFAdditions.m */,
+				099DCB5815D551E200DAB937 /* UIWindow-KIFAdditions.h */,
+				099DCB5915D551E200DAB937 /* UIWindow-KIFAdditions.m */,
+			);
+			name = Additions;
+			path = KIF/Documentation/Examples/Testable/Frameworks/KIF/Additions;
+			sourceTree = "<group>";
+		};
+		099DCB6215D551E200DAB937 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				099DCB5B15D551E200DAB937 /* KIF-Prefix.pch */,
+				099DCB5C15D551E200DAB937 /* KIFTestController.h */,
+				099DCB5D15D551E200DAB937 /* KIFTestController.m */,
+				099DCB5E15D551E200DAB937 /* KIFTestScenario.h */,
+				099DCB5F15D551E200DAB937 /* KIFTestScenario.m */,
+				099DCB6015D551E200DAB937 /* KIFTestStep.h */,
+				099DCB6115D551E200DAB937 /* KIFTestStep.m */,
+			);
+			name = Classes;
+			path = KIF/Documentation/Examples/Testable/Frameworks/KIF/Classes;
+			sourceTree = "<group>";
+		};
 		09BE77E71590F03B000CFCEB = {
 			isa = PBXGroup;
 			children = (
 				0934F6B515922E0400A58A04 /* rit_bus_resources */,
 				09BE77FC1590F03B000CFCEB /* rit_bus_source */,
-				09BE78261590F03B000CFCEB /* rit_busTests */,
+				099DCA8415D54CBB00DAB937 /* Testing */,
 				09BE77F51590F03B000CFCEB /* Frameworks */,
 				09BE77F31590F03B000CFCEB /* Products */,
+				099DCA8115D546B400DAB937 /* rit_bus copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,7 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				09BE77F21590F03B000CFCEB /* rit_bus.app */,
-				09BE781F1590F03B000CFCEB /* rit_busTests.octest */,
+				099DCA7F15D546B400DAB937 /* RIT Bus (Integration Tests).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +332,8 @@
 		09BE77F51590F03B000CFCEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				099DCB8515D557D900DAB937 /* libKIF.a */,
+				099DCB4815D551D600DAB937 /* KIF */,
 				0934F6A01591178C00A58A04 /* CoreLocation.framework */,
 				09BE784915910671000CFCEB /* MapKit.framework */,
 				09BE77F61590F03B000CFCEB /* UIKit.framework */,
@@ -232,25 +374,6 @@
 				09BE77FF1590F03B000CFCEB /* InfoPlist.strings */,
 				09BE78021590F03B000CFCEB /* main.m */,
 				09BE78041590F03B000CFCEB /* rit_bus-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		09BE78261590F03B000CFCEB /* rit_busTests */ = {
-			isa = PBXGroup;
-			children = (
-				09BE782C1590F03B000CFCEB /* rit_busTests.h */,
-				09BE782D1590F03B000CFCEB /* rit_busTests.m */,
-				09BE78271590F03B000CFCEB /* Supporting Files */,
-			);
-			path = rit_busTests;
-			sourceTree = "<group>";
-		};
-		09BE78271590F03B000CFCEB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				09BE78281590F03B000CFCEB /* rit_busTests-Info.plist */,
-				09BE78291590F03B000CFCEB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -345,6 +468,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		099DCA5515D546B400DAB937 /* Integration Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 099DCA7C15D546B400DAB937 /* Build configuration list for PBXNativeTarget "Integration Tests" */;
+			buildPhases = (
+				099DCA5615D546B400DAB937 /* Sources */,
+				099DCA6715D546B400DAB937 /* Frameworks */,
+				099DCA6D15D546B400DAB937 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Integration Tests";
+			productName = rit_bus;
+			productReference = 099DCA7F15D546B400DAB937 /* RIT Bus (Integration Tests).app */;
+			productType = "com.apple.product-type.application";
+		};
 		09BE77F11590F03B000CFCEB /* rit_bus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09BE78311590F03B000CFCEB /* Build configuration list for PBXNativeTarget "rit_bus" */;
@@ -361,25 +501,6 @@
 			productName = rit_bus;
 			productReference = 09BE77F21590F03B000CFCEB /* rit_bus.app */;
 			productType = "com.apple.product-type.application";
-		};
-		09BE781E1590F03B000CFCEB /* rit_busTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09BE78341590F03B000CFCEB /* Build configuration list for PBXNativeTarget "rit_busTests" */;
-			buildPhases = (
-				09BE781A1590F03B000CFCEB /* Sources */,
-				09BE781B1590F03B000CFCEB /* Frameworks */,
-				09BE781C1590F03B000CFCEB /* Resources */,
-				09BE781D1590F03B000CFCEB /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09BE78251590F03B000CFCEB /* PBXTargetDependency */,
-			);
-			name = rit_busTests;
-			productName = rit_busTests;
-			productReference = 09BE781F1590F03B000CFCEB /* rit_busTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -402,12 +523,33 @@
 			projectRoot = "";
 			targets = (
 				09BE77F11590F03B000CFCEB /* rit_bus */,
-				09BE781E1590F03B000CFCEB /* rit_busTests */,
+				099DCA5515D546B400DAB937 /* Integration Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		099DCA6D15D546B400DAB937 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				099DCA6E15D546B400DAB937 /* InfoPlist.strings in Resources */,
+				099DCA6F15D546B400DAB937 /* MasterViewController_iPhone.xib in Resources */,
+				099DCA7015D546B400DAB937 /* MasterViewController_iPad.xib in Resources */,
+				099DCA7115D546B400DAB937 /* DetailViewController_iPhone.xib in Resources */,
+				099DCA7215D546B400DAB937 /* DetailViewController_iPad.xib in Resources */,
+				099DCA7315D546B400DAB937 /* MapViewController.xib in Resources */,
+				099DCA7415D546B400DAB937 /* RitBusMapView.xib in Resources */,
+				099DCA7515D546B400DAB937 /* park_point_stops.plist in Resources */,
+				099DCA7615D546B400DAB937 /* park_point_stops_copy.plist in Resources */,
+				099DCA7715D546B400DAB937 /* NextBusController.xib in Resources */,
+				099DCA7815D546B400DAB937 /* full_list_stops.plist in Resources */,
+				099DCA7915D546B400DAB937 /* province_geo_boxes.plist in Resources */,
+				099DCA7A15D546B400DAB937 /* map_button.png in Resources */,
+				099DCA7B15D546B400DAB937 /* map_button@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		09BE77F01590F03B000CFCEB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,36 +568,61 @@
 				09F1E116159CBB520075551E /* province_geo_boxes.plist in Resources */,
 				09F325F815A20ED90004BBF4 /* map_button.png in Resources */,
 				09F325F915A20ED90004BBF4 /* map_button@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09BE781C1590F03B000CFCEB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09BE782B1590F03B000CFCEB /* InfoPlist.strings in Resources */,
+				099DCB6315D551E200DAB937 /* LoadableCategory.h in Resources */,
+				099DCB6415D551E200DAB937 /* CGGeometry-KIFAdditions.h in Resources */,
+				099DCB6515D551E200DAB937 /* CGGeometry-KIFAdditions.m in Resources */,
+				099DCB6615D551E200DAB937 /* NSFileManager-KIFAdditions.h in Resources */,
+				099DCB6715D551E200DAB937 /* NSFileManager-KIFAdditions.m in Resources */,
+				099DCB6815D551E300DAB937 /* UIAccessibilityElement-KIFAdditions.h in Resources */,
+				099DCB6915D551E300DAB937 /* UIAccessibilityElement-KIFAdditions.m in Resources */,
+				099DCB6A15D551E300DAB937 /* UIApplication-KIFAdditions.h in Resources */,
+				099DCB6B15D551E300DAB937 /* UIApplication-KIFAdditions.m in Resources */,
+				099DCB6C15D551E300DAB937 /* UIScrollView-KIFAdditions.h in Resources */,
+				099DCB6D15D551E300DAB937 /* UIScrollView-KIFAdditions.m in Resources */,
+				099DCB6E15D551E300DAB937 /* UITouch-KIFAdditions.h in Resources */,
+				099DCB6F15D551E300DAB937 /* UITouch-KIFAdditions.m in Resources */,
+				099DCB7015D551E300DAB937 /* UIView-KIFAdditions.h in Resources */,
+				099DCB7115D551E300DAB937 /* UIView-KIFAdditions.m in Resources */,
+				099DCB7215D551E300DAB937 /* UIWindow-KIFAdditions.h in Resources */,
+				099DCB7315D551E300DAB937 /* UIWindow-KIFAdditions.m in Resources */,
+				099DCB7415D551E300DAB937 /* KIF-Prefix.pch in Resources */,
+				099DCB7515D551E300DAB937 /* KIFTestController.h in Resources */,
+				099DCB7615D551E300DAB937 /* KIFTestController.m in Resources */,
+				099DCB7715D551E300DAB937 /* KIFTestScenario.h in Resources */,
+				099DCB7815D551E300DAB937 /* KIFTestScenario.m in Resources */,
+				099DCB7915D551E300DAB937 /* KIFTestStep.h in Resources */,
+				099DCB7A15D551E300DAB937 /* KIFTestStep.m in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		09BE781D1590F03B000CFCEB /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXSourcesBuildPhase section */
+		099DCA5615D546B400DAB937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
+				099DCB8015D554B000DAB937 /* RITTestController.m in Sources */,
+				099DCB8115D554B000DAB937 /* KIFTestScenario+RITAdditions.m in Sources */,
+				099DCA5715D546B400DAB937 /* main.m in Sources */,
+				099DCA5815D546B400DAB937 /* AppDelegate.m in Sources */,
+				099DCA5915D546B400DAB937 /* MasterViewController.m in Sources */,
+				099DCA5A15D546B400DAB937 /* DetailViewController.m in Sources */,
+				099DCA5B15D546B400DAB937 /* MapViewController.m in Sources */,
+				099DCA5C15D546B400DAB937 /* RitBusMapView.m in Sources */,
+				099DCA5D15D546B400DAB937 /* BusPoint.m in Sources */,
+				099DCA5E15D546B400DAB937 /* RITBusConstants.m in Sources */,
+				099DCA5F15D546B400DAB937 /* StopAnnotation.m in Sources */,
+				099DCA6015D546B400DAB937 /* StopAnnotationView.m in Sources */,
+				099DCA6115D546B400DAB937 /* LocationManager.m in Sources */,
+				099DCA6215D546B400DAB937 /* NextBusController.m in Sources */,
+				099DCA6315D546B400DAB937 /* RITBusCommon.m in Sources */,
+				099DCA6415D546B400DAB937 /* BusStopLocation.m in Sources */,
+				099DCA6515D546B400DAB937 /* Theme.m in Sources */,
+				099DCA6615D546B400DAB937 /* RITTheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
 		09BE77EE1590F03B000CFCEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,26 +643,12 @@
 				09F1E02A1598CF900075551E /* BusStopLocation.m in Sources */,
 				09F325EB159E3F290004BBF4 /* Theme.m in Sources */,
 				09F325EE159E40A10004BBF4 /* RITTheme.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09BE781A1590F03B000CFCEB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09BE782E1590F03B000CFCEB /* rit_busTests.m in Sources */,
+				099DCA8715D54CDF00DAB937 /* RITTestController.m in Sources */,
+				099DCB7F15D553A500DAB937 /* KIFTestScenario+RITAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		09BE78251590F03B000CFCEB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 09BE77F11590F03B000CFCEB /* rit_bus */;
-			targetProxy = 09BE78241590F03B000CFCEB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		09BE77FF1590F03B000CFCEB /* InfoPlist.strings */ = {
@@ -538,17 +691,67 @@
 			name = DetailViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
-		09BE78291590F03B000CFCEB /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09BE782A1590F03B000CFCEB /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		099DCA7D15D546B400DAB937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rit_bus/rit_bus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"RUN_KIF_TESTS=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/KIF/**",
+				);
+				INFOPLIST_FILE = "rit_bus copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/rit_bus-haepjgmjwtkfqffysgqcehgqutco/Build/Products/Debug-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "RIT Bus (Integration Tests)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		099DCA7E15D546B400DAB937 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rit_bus/rit_bus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"RUN_KIF_TESTS=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/KIF/**",
+				);
+				INFOPLIST_FILE = "rit_bus copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/rit_bus-haepjgmjwtkfqffysgqcehgqutco/Build/Products/Debug-iphonesimulator\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "RIT Bus (Integration Tests)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		09BE782F1590F03B000CFCEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -620,43 +823,18 @@
 			};
 			name = Release;
 		};
-		09BE78351590F03B000CFCEB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/rit_bus.app/rit_bus";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "rit_bus/rit_bus-Prefix.pch";
-				INFOPLIST_FILE = "rit_busTests/rit_busTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		09BE78361590F03B000CFCEB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/rit_bus.app/rit_bus";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "rit_bus/rit_bus-Prefix.pch";
-				INFOPLIST_FILE = "rit_busTests/rit_busTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		099DCA7C15D546B400DAB937 /* Build configuration list for PBXNativeTarget "Integration Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				099DCA7D15D546B400DAB937 /* Debug */,
+				099DCA7E15D546B400DAB937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		09BE77EC1590F03B000CFCEB /* Build configuration list for PBXProject "rit_bus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -671,15 +849,6 @@
 			buildConfigurations = (
 				09BE78321590F03B000CFCEB /* Debug */,
 				09BE78331590F03B000CFCEB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		09BE78341590F03B000CFCEB /* Build configuration list for PBXNativeTarget "rit_busTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				09BE78351590F03B000CFCEB /* Debug */,
-				09BE78361590F03B000CFCEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
