@@ -1,16 +1,14 @@
 //
 //  AppDelegate.m
-//  rit_bus
+//  TigerBus
 //
-//  Created by Thomas DeMeo on 6/19/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Thomas DeMeo on 9/23/12.
+//  Copyright (c) 2012 Thomas DeMeo. All rights reserved.
 //
 
 #import "AppDelegate.h"
+
 #import "MasterViewController.h"
-
-#import "DetailViewController.h"
-
 
 @implementation AppDelegate
 
@@ -22,10 +20,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-        
+    
     NextBusController *nextBusController = [[NextBusController alloc] init];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:nextBusController];
-
+    
     // Set all of the appearance customizations for the app
     [ThemeManager customizeAppAppearance];
     
@@ -37,49 +35,43 @@
     
     [self.window makeKeyAndVisible];
     
-#if RUN_KIF_TESTS
-    [[RITTestController sharedInstance] startTestingWithCompletionBlock:^{
-        // Exit after the tests complete so that CI knows we're done
-        exit([[RITTestController sharedInstance] failureCount]);
-    }];
-#endif
-    
     return YES;
 }
 
-- (void) parseAllStops {
-    NSDictionary *allBusStops = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"full_list_stops" ofType:@"plist"]] objectForKey:@"full_list"];    
-    if (!allBusStops) {
-        NSLog(@"Resource not found for file: %@", @"full_list_stops.plist");
-    }
-    NSLog(@"Count: %i", [allBusStops count]);
-    
-    allStops = [NSMutableDictionary dictionary];
-    
-    float latitude;
-    float longitude;
-    NSEnumerator *enumerator = [allBusStops keyEnumerator];
-    id key;
-    BusStopLocation *point;
-    while ((key = [enumerator nextObject])) {
-        NSDictionary *stop = [allBusStops objectForKey:key];
-        NSLog(@"Key: %@", key);
-        
-        NSString *title = [stop objectForKey:@"title"];
-        
-        latitude = [[stop objectForKey:@"latitude"] doubleValue];
-        longitude = [[stop  objectForKey:@"longitude"] doubleValue];
-        
-        point = [[BusStopLocation alloc] initWithLatitude:latitude andLongitude:longitude];
-        
-        if (![title isEqualToString:@""]) {
-            NSLog(@"Locaaaaa Title: %@", title);
-            [point setTitle:title];
-        }
-        [allStops setObject:point forKey:key];
-    }
+//- (void) parseAllStops {
+//    NSDictionary *allBusStops = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"full_list_stops" ofType:@"plist"]] objectForKey:@"full_list"];
+//    if (!allBusStops) {
+//        NSLog(@"Resource not found for file: %@", @"full_list_stops.plist");
+//    }
+//    NSLog(@"Count: %i", [allBusStops count]);
+//    
+//    allStops = [NSMutableDictionary dictionary];
+//    
+//    float latitude;
+//    float longitude;
+//    NSEnumerator *enumerator = [allBusStops keyEnumerator];
+//    id key;
+//    BusStopLocation *point;
+//    while ((key = [enumerator nextObject])) {
+//        NSDictionary *stop = [allBusStops objectForKey:key];
+//        NSLog(@"Key: %@", key);
+//        
+//        NSString *title = [stop objectForKey:@"title"];
+//        
+//        latitude = [[stop objectForKey:@"latitude"] doubleValue];
+//        longitude = [[stop  objectForKey:@"longitude"] doubleValue];
+//        
+//        point = [[BusStopLocation alloc] initWithLatitude:latitude andLongitude:longitude];
+//        
+//        if (![title isEqualToString:@""]) {
+//            NSLog(@"Locaaaaa Title: %@", title);
+//            [point setTitle:title];
+//        }
+//        [allStops setObject:point forKey:key];
+//    }
+//    
+//}
 
-}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

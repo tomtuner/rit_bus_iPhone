@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E92B4D0C160FB25F009D3D22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B4D0B160FB25F009D3D22 /* UIKit.framework */; };
+		E92B4D0E160FB25F009D3D22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B4D0D160FB25F009D3D22 /* Foundation.framework */; };
+		E92B4D10160FB25F009D3D22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B4D0F160FB25F009D3D22 /* CoreGraphics.framework */; };
+		E92B4D16160FB25F009D3D22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D14160FB25F009D3D22 /* InfoPlist.strings */; };
+		E92B4D18160FB25F009D3D22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D17160FB25F009D3D22 /* main.m */; };
+		E92B4D1C160FB25F009D3D22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D1B160FB25F009D3D22 /* AppDelegate.m */; };
+		E92B4D1E160FB25F009D3D22 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D1D160FB25F009D3D22 /* Default.png */; };
+		E92B4D20160FB25F009D3D22 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D1F160FB25F009D3D22 /* Default@2x.png */; };
+		E92B4D22160FB25F009D3D22 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D21160FB25F009D3D22 /* Default-568h@2x.png */; };
+		E92B4D25160FB25F009D3D22 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D24160FB25F009D3D22 /* MasterViewController.m */; };
+		E92B4D28160FB25F009D3D22 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D27160FB25F009D3D22 /* DetailViewController.m */; };
+		E92B4D2B160FB25F009D3D22 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D29160FB25F009D3D22 /* MasterViewController.xib */; };
+		E92B4D2E160FB25F009D3D22 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D2C160FB25F009D3D22 /* DetailViewController.xib */; };
+		E92B4D37160FB32E009D3D22 /* map_button.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D35160FB32E009D3D22 /* map_button.png */; };
+		E92B4D38160FB32E009D3D22 /* map_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D36160FB32E009D3D22 /* map_button@2x.png */; };
+		E92B4D40160FB350009D3D22 /* full_list_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D3B160FB350009D3D22 /* full_list_stops.plist */; };
+		E92B4D41160FB350009D3D22 /* park_point_stops_copy.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D3C160FB350009D3D22 /* park_point_stops_copy.plist */; };
+		E92B4D42160FB350009D3D22 /* park_point_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D3D160FB350009D3D22 /* park_point_stops.plist */; };
+		E92B4D43160FB350009D3D22 /* province_geo_boxes.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D3E160FB350009D3D22 /* province_geo_boxes.plist */; };
+		E92B4D44160FB350009D3D22 /* rit_bus-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D3F160FB350009D3D22 /* rit_bus-Info.plist */; };
+		E92B4D4D160FB3AC009D3D22 /* NextBusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D4A160FB3AC009D3D22 /* NextBusController.xib */; };
+		E92B4D4E160FB3AC009D3D22 /* NextBusController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D4C160FB3AC009D3D22 /* NextBusController.m */; };
+		E92B4D53160FB3CD009D3D22 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D52160FB3CD009D3D22 /* LocationManager.m */; };
+		E92B4D58160FB3DF009D3D22 /* RITBusCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D55160FB3DF009D3D22 /* RITBusCommon.m */; };
+		E92B4D59160FB3DF009D3D22 /* RITBusConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D57160FB3DF009D3D22 /* RITBusConstants.m */; };
+		E92B4D5C160FB451009D3D22 /* BusStopLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D5B160FB451009D3D22 /* BusStopLocation.m */; };
+		E92B4D64160FB47A009D3D22 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D5D160FB47A009D3D22 /* MapViewController.xib */; };
+		E92B4D65160FB47A009D3D22 /* BusPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D5F160FB47A009D3D22 /* BusPoint.m */; };
+		E92B4D66160FB47A009D3D22 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D61160FB47A009D3D22 /* MapViewController.m */; };
+		E92B4D67160FB47A009D3D22 /* StopAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D63160FB47A009D3D22 /* StopAnnotationView.m */; };
+		E92B4D6A160FB4AB009D3D22 /* StopAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D69160FB4AB009D3D22 /* StopAnnotation.m */; };
+		E92B4D6F160FB51A009D3D22 /* RITTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D6C160FB51A009D3D22 /* RITTheme.m */; };
+		E92B4D70160FB51A009D3D22 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D6E160FB51A009D3D22 /* Theme.m */; };
+		E92B4D72160FB567009D3D22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B4D71160FB567009D3D22 /* CoreLocation.framework */; };
+		E92B4D74160FB56B009D3D22 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B4D73160FB56B009D3D22 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E92B4D07160FB25F009D3D22 /* TigerBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TigerBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B4D0B160FB25F009D3D22 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E92B4D0D160FB25F009D3D22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E92B4D0F160FB25F009D3D22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E92B4D13160FB25F009D3D22 /* TigerBus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TigerBus-Info.plist"; sourceTree = "<group>"; };
+		E92B4D15160FB25F009D3D22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E92B4D17160FB25F009D3D22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E92B4D19160FB25F009D3D22 /* TigerBus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TigerBus-Prefix.pch"; sourceTree = "<group>"; };
+		E92B4D1A160FB25F009D3D22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E92B4D1B160FB25F009D3D22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E92B4D1D160FB25F009D3D22 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E92B4D1F160FB25F009D3D22 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E92B4D21160FB25F009D3D22 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E92B4D23160FB25F009D3D22 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		E92B4D24160FB25F009D3D22 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		E92B4D26160FB25F009D3D22 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E92B4D27160FB25F009D3D22 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E92B4D2A160FB25F009D3D22 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		E92B4D2D160FB25F009D3D22 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		E92B4D35160FB32E009D3D22 /* map_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_button.png; sourceTree = "<group>"; };
+		E92B4D36160FB32E009D3D22 /* map_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_button@2x.png"; sourceTree = "<group>"; };
+		E92B4D3B160FB350009D3D22 /* full_list_stops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = full_list_stops.plist; sourceTree = "<group>"; };
+		E92B4D3C160FB350009D3D22 /* park_point_stops_copy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = park_point_stops_copy.plist; sourceTree = "<group>"; };
+		E92B4D3D160FB350009D3D22 /* park_point_stops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = park_point_stops.plist; sourceTree = "<group>"; };
+		E92B4D3E160FB350009D3D22 /* province_geo_boxes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = province_geo_boxes.plist; sourceTree = "<group>"; };
+		E92B4D3F160FB350009D3D22 /* rit_bus-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "rit_bus-Info.plist"; sourceTree = "<group>"; };
+		E92B4D4A160FB3AC009D3D22 /* NextBusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NextBusController.xib; sourceTree = "<group>"; };
+		E92B4D4B160FB3AC009D3D22 /* NextBusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextBusController.h; sourceTree = "<group>"; };
+		E92B4D4C160FB3AC009D3D22 /* NextBusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextBusController.m; sourceTree = "<group>"; };
+		E92B4D51160FB3CD009D3D22 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		E92B4D52160FB3CD009D3D22 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		E92B4D54160FB3DF009D3D22 /* RITBusCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITBusCommon.h; sourceTree = "<group>"; };
+		E92B4D55160FB3DF009D3D22 /* RITBusCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITBusCommon.m; sourceTree = "<group>"; };
+		E92B4D56160FB3DF009D3D22 /* RITBusConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITBusConstants.h; sourceTree = "<group>"; };
+		E92B4D57160FB3DF009D3D22 /* RITBusConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITBusConstants.m; sourceTree = "<group>"; };
+		E92B4D5A160FB451009D3D22 /* BusStopLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusStopLocation.h; sourceTree = "<group>"; };
+		E92B4D5B160FB451009D3D22 /* BusStopLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusStopLocation.m; sourceTree = "<group>"; };
+		E92B4D5D160FB47A009D3D22 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		E92B4D5E160FB47A009D3D22 /* BusPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPoint.h; sourceTree = "<group>"; };
+		E92B4D5F160FB47A009D3D22 /* BusPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPoint.m; sourceTree = "<group>"; };
+		E92B4D60160FB47A009D3D22 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		E92B4D61160FB47A009D3D22 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		E92B4D62160FB47A009D3D22 /* StopAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopAnnotationView.h; sourceTree = "<group>"; };
+		E92B4D63160FB47A009D3D22 /* StopAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopAnnotationView.m; sourceTree = "<group>"; };
+		E92B4D68160FB4AB009D3D22 /* StopAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopAnnotation.h; sourceTree = "<group>"; };
+		E92B4D69160FB4AB009D3D22 /* StopAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopAnnotation.m; sourceTree = "<group>"; };
+		E92B4D6B160FB51A009D3D22 /* RITTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITTheme.h; sourceTree = "<group>"; };
+		E92B4D6C160FB51A009D3D22 /* RITTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RITTheme.m; sourceTree = "<group>"; };
+		E92B4D6D160FB51A009D3D22 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		E92B4D6E160FB51A009D3D22 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
+		E92B4D71160FB567009D3D22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E92B4D73160FB56B009D3D22 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E92B4D04160FB25F009D3D22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92B4D74160FB56B009D3D22 /* MapKit.framework in Frameworks */,
+				E92B4D72160FB567009D3D22 /* CoreLocation.framework in Frameworks */,
+				E92B4D0C160FB25F009D3D22 /* UIKit.framework in Frameworks */,
+				E92B4D0E160FB25F009D3D22 /* Foundation.framework in Frameworks */,
+				E92B4D10160FB25F009D3D22 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E92B4CFC160FB25F009D3D22 = {
+			isa = PBXGroup;
+			children = (
+				E92B4D34160FB30D009D3D22 /* TigerBus_resources */,
+				E92B4D11160FB25F009D3D22 /* TigerBus_source */,
+				E92B4D0A160FB25F009D3D22 /* Frameworks */,
+				E92B4D08160FB25F009D3D22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E92B4D08160FB25F009D3D22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D07160FB25F009D3D22 /* TigerBus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E92B4D0A160FB25F009D3D22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D73160FB56B009D3D22 /* MapKit.framework */,
+				E92B4D71160FB567009D3D22 /* CoreLocation.framework */,
+				E92B4D0B160FB25F009D3D22 /* UIKit.framework */,
+				E92B4D0D160FB25F009D3D22 /* Foundation.framework */,
+				E92B4D0F160FB25F009D3D22 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E92B4D11160FB25F009D3D22 /* TigerBus_source */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D45160FB372009D3D22 /* AppDelegate */,
+				E92B4D49160FB38A009D3D22 /* HomeScreen */,
+				E92B4D48160FB384009D3D22 /* Visual */,
+				E92B4D47160FB37E009D3D22 /* BusStops */,
+				E92B4D46160FB378009D3D22 /* Maps */,
+				E92B4D4F160FB3B6009D3D22 /* Shared */,
+				E92B4D23160FB25F009D3D22 /* MasterViewController.h */,
+				E92B4D24160FB25F009D3D22 /* MasterViewController.m */,
+				E92B4D26160FB25F009D3D22 /* DetailViewController.h */,
+				E92B4D27160FB25F009D3D22 /* DetailViewController.m */,
+				E92B4D29160FB25F009D3D22 /* MasterViewController.xib */,
+				E92B4D2C160FB25F009D3D22 /* DetailViewController.xib */,
+				E92B4D12160FB25F009D3D22 /* Supporting Files */,
+			);
+			name = TigerBus_source;
+			path = TigerBus;
+			sourceTree = "<group>";
+		};
+		E92B4D12160FB25F009D3D22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D13160FB25F009D3D22 /* TigerBus-Info.plist */,
+				E92B4D14160FB25F009D3D22 /* InfoPlist.strings */,
+				E92B4D17160FB25F009D3D22 /* main.m */,
+				E92B4D19160FB25F009D3D22 /* TigerBus-Prefix.pch */,
+				E92B4D1D160FB25F009D3D22 /* Default.png */,
+				E92B4D1F160FB25F009D3D22 /* Default@2x.png */,
+				E92B4D21160FB25F009D3D22 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E92B4D34160FB30D009D3D22 /* TigerBus_resources */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D39160FB330009D3D22 /* images */,
+				E92B4D3A160FB334009D3D22 /* plists */,
+			);
+			name = TigerBus_resources;
+			sourceTree = "<group>";
+		};
+		E92B4D39160FB330009D3D22 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D35160FB32E009D3D22 /* map_button.png */,
+				E92B4D36160FB32E009D3D22 /* map_button@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		E92B4D3A160FB334009D3D22 /* plists */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D3B160FB350009D3D22 /* full_list_stops.plist */,
+				E92B4D3C160FB350009D3D22 /* park_point_stops_copy.plist */,
+				E92B4D3D160FB350009D3D22 /* park_point_stops.plist */,
+				E92B4D3E160FB350009D3D22 /* province_geo_boxes.plist */,
+				E92B4D3F160FB350009D3D22 /* rit_bus-Info.plist */,
+			);
+			name = plists;
+			sourceTree = "<group>";
+		};
+		E92B4D45160FB372009D3D22 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D1A160FB25F009D3D22 /* AppDelegate.h */,
+				E92B4D1B160FB25F009D3D22 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E92B4D46160FB378009D3D22 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D68160FB4AB009D3D22 /* StopAnnotation.h */,
+				E92B4D69160FB4AB009D3D22 /* StopAnnotation.m */,
+				E92B4D5D160FB47A009D3D22 /* MapViewController.xib */,
+				E92B4D5E160FB47A009D3D22 /* BusPoint.h */,
+				E92B4D5F160FB47A009D3D22 /* BusPoint.m */,
+				E92B4D60160FB47A009D3D22 /* MapViewController.h */,
+				E92B4D61160FB47A009D3D22 /* MapViewController.m */,
+				E92B4D62160FB47A009D3D22 /* StopAnnotationView.h */,
+				E92B4D63160FB47A009D3D22 /* StopAnnotationView.m */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		E92B4D47160FB37E009D3D22 /* BusStops */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D5A160FB451009D3D22 /* BusStopLocation.h */,
+				E92B4D5B160FB451009D3D22 /* BusStopLocation.m */,
+			);
+			name = BusStops;
+			sourceTree = "<group>";
+		};
+		E92B4D48160FB384009D3D22 /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D6B160FB51A009D3D22 /* RITTheme.h */,
+				E92B4D6C160FB51A009D3D22 /* RITTheme.m */,
+				E92B4D6D160FB51A009D3D22 /* Theme.h */,
+				E92B4D6E160FB51A009D3D22 /* Theme.m */,
+			);
+			name = Visual;
+			sourceTree = "<group>";
+		};
+		E92B4D49160FB38A009D3D22 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D4B160FB3AC009D3D22 /* NextBusController.h */,
+				E92B4D4C160FB3AC009D3D22 /* NextBusController.m */,
+				E92B4D4A160FB3AC009D3D22 /* NextBusController.xib */,
+			);
+			name = HomeScreen;
+			sourceTree = "<group>";
+		};
+		E92B4D4F160FB3B6009D3D22 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D54160FB3DF009D3D22 /* RITBusCommon.h */,
+				E92B4D55160FB3DF009D3D22 /* RITBusCommon.m */,
+				E92B4D56160FB3DF009D3D22 /* RITBusConstants.h */,
+				E92B4D57160FB3DF009D3D22 /* RITBusConstants.m */,
+				E92B4D50160FB3BE009D3D22 /* Managers */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		E92B4D50160FB3BE009D3D22 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E92B4D51160FB3CD009D3D22 /* LocationManager.h */,
+				E92B4D52160FB3CD009D3D22 /* LocationManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E92B4D06160FB25F009D3D22 /* TigerBus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E92B4D31160FB25F009D3D22 /* Build configuration list for PBXNativeTarget "TigerBus" */;
+			buildPhases = (
+				E92B4D03160FB25F009D3D22 /* Sources */,
+				E92B4D04160FB25F009D3D22 /* Frameworks */,
+				E92B4D05160FB25F009D3D22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TigerBus;
+			productName = TigerBus;
+			productReference = E92B4D07160FB25F009D3D22 /* TigerBus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E92B4CFE160FB25F009D3D22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Thomas DeMeo";
+			};
+			buildConfigurationList = E92B4D01160FB25F009D3D22 /* Build configuration list for PBXProject "TigerBus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E92B4CFC160FB25F009D3D22;
+			productRefGroup = E92B4D08160FB25F009D3D22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E92B4D06160FB25F009D3D22 /* TigerBus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E92B4D05160FB25F009D3D22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92B4D16160FB25F009D3D22 /* InfoPlist.strings in Resources */,
+				E92B4D1E160FB25F009D3D22 /* Default.png in Resources */,
+				E92B4D20160FB25F009D3D22 /* Default@2x.png in Resources */,
+				E92B4D22160FB25F009D3D22 /* Default-568h@2x.png in Resources */,
+				E92B4D2B160FB25F009D3D22 /* MasterViewController.xib in Resources */,
+				E92B4D2E160FB25F009D3D22 /* DetailViewController.xib in Resources */,
+				E92B4D37160FB32E009D3D22 /* map_button.png in Resources */,
+				E92B4D38160FB32E009D3D22 /* map_button@2x.png in Resources */,
+				E92B4D40160FB350009D3D22 /* full_list_stops.plist in Resources */,
+				E92B4D41160FB350009D3D22 /* park_point_stops_copy.plist in Resources */,
+				E92B4D42160FB350009D3D22 /* park_point_stops.plist in Resources */,
+				E92B4D43160FB350009D3D22 /* province_geo_boxes.plist in Resources */,
+				E92B4D44160FB350009D3D22 /* rit_bus-Info.plist in Resources */,
+				E92B4D4D160FB3AC009D3D22 /* NextBusController.xib in Resources */,
+				E92B4D64160FB47A009D3D22 /* MapViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E92B4D03160FB25F009D3D22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92B4D18160FB25F009D3D22 /* main.m in Sources */,
+				E92B4D1C160FB25F009D3D22 /* AppDelegate.m in Sources */,
+				E92B4D25160FB25F009D3D22 /* MasterViewController.m in Sources */,
+				E92B4D28160FB25F009D3D22 /* DetailViewController.m in Sources */,
+				E92B4D4E160FB3AC009D3D22 /* NextBusController.m in Sources */,
+				E92B4D53160FB3CD009D3D22 /* LocationManager.m in Sources */,
+				E92B4D58160FB3DF009D3D22 /* RITBusCommon.m in Sources */,
+				E92B4D59160FB3DF009D3D22 /* RITBusConstants.m in Sources */,
+				E92B4D5C160FB451009D3D22 /* BusStopLocation.m in Sources */,
+				E92B4D65160FB47A009D3D22 /* BusPoint.m in Sources */,
+				E92B4D66160FB47A009D3D22 /* MapViewController.m in Sources */,
+				E92B4D67160FB47A009D3D22 /* StopAnnotationView.m in Sources */,
+				E92B4D6A160FB4AB009D3D22 /* StopAnnotation.m in Sources */,
+				E92B4D6F160FB51A009D3D22 /* RITTheme.m in Sources */,
+				E92B4D70160FB51A009D3D22 /* Theme.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E92B4D14160FB25F009D3D22 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E92B4D15160FB25F009D3D22 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E92B4D29160FB25F009D3D22 /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E92B4D2A160FB25F009D3D22 /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		E92B4D2C160FB25F009D3D22 /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E92B4D2D160FB25F009D3D22 /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E92B4D2F160FB25F009D3D22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E92B4D30160FB25F009D3D22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E92B4D32160FB25F009D3D22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TigerBus/TigerBus-Prefix.pch";
+				INFOPLIST_FILE = "TigerBus/TigerBus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E92B4D33160FB25F009D3D22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TigerBus/TigerBus-Prefix.pch";
+				INFOPLIST_FILE = "TigerBus/TigerBus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E92B4D01160FB25F009D3D22 /* Build configuration list for PBXProject "TigerBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92B4D2F160FB25F009D3D22 /* Debug */,
+				E92B4D30160FB25F009D3D22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E92B4D31160FB25F009D3D22 /* Build configuration list for PBXNativeTarget "TigerBus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92B4D32160FB25F009D3D22 /* Debug */,
+				E92B4D33160FB25F009D3D22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E92B4CFE160FB25F009D3D22 /* Project object */;
+}

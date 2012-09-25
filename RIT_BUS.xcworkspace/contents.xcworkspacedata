@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:rit_bus.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../../Downloads/KIF/KIF.xcodeproj">
+      location = "group:TigerBus/TigerBus.xcodeproj">
    </FileRef>
 </Workspace>

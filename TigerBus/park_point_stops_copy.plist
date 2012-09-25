@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>park_point</key>
+	<dict>
+		<key>gleason_circle</key>
+		<dict>
+			<key>title</key>
+			<string>Gleason Circle</string>
+			<key>latitude</key>
+			<real>43.083112</real>
+			<key>longitude</key>
+			<real>-77.675909</real>
+		</dict>
+		<key>10</key>
+		<dict>
+			<key>title</key>
+			<string></string>
+			<key>latitude</key>
+			<real>43.08255</real>
+			<key>longitude</key>
+			<real>-77.67653</real>
+		</dict>
+		<key>barnes_nobles</key>
+		<dict>
+			<key>title</key>
+			<string>Barnes and Nobles</string>
+			<key>latitude</key>
+			<real>43.092021</real>
+			<key>longitude</key>
+			<real>-77.65518400000001</real>
+		</dict>
+		<key>park_point_south</key>
+		<dict>
+			<key>title</key>
+			<string>South</string>
+			<key>latitude</key>
+			<real>43.08832</real>
+			<key>longitude</key>
+			<real>-77.65803200000001</real>
+		</dict>
+	</dict>
+</dict>
+</plist>

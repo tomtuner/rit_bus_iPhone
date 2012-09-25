@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>park_point</key>
+	<dict>
+		<key>gleason_circle</key>
+		<dict>
+			<key>title</key>
+			<string>Gleason Circle</string>
+			<key>latitude</key>
+			<real>43.083112</real>
+			<key>longitude</key>
+			<real>-77.675909</real>
+		</dict>
+		<key>barnes_nobles</key>
+		<dict>
+			<key>title</key>
+			<string>Barnes and Nobles</string>
+			<key>latitude</key>
+			<real>43.092021</real>
+			<key>longitude</key>
+			<real>-77.65518400000001</real>
+		</dict>
+		<key>park_point_south</key>
+		<dict>
+			<key>title</key>
+			<string>Park Point South</string>
+			<key>latitude</key>
+			<real>43.08832</real>
+			<key>longitude</key>
+			<real>-77.65803200000001</real>
+		</dict>
+		<key>lot_k</key>
+		<dict>
+			<key>title</key>
+			<string>Lot K</string>
+			<key>latitude</key>
+			<real>43.08605</real>
+			<key>longitude</key>
+			<real>-77.666076</real>
+		</dict>
+		<key>park_point_north</key>
+		<dict>
+			<key>title</key>
+			<string>Park Point North</string>
+			<key>latitude</key>
+			<real>43.092361</real>
+			<key>longitude</key>
+			<real>-77.658411</real>
+		</dict>
+		<key>residence_halls</key>
+		<dict>
+			<key>title</key>
+			<string>Residence Halls</string>
+			<key>latitude</key>
+			<real>43.084177</real>
+			<key>longitude</key>
+			<real>-77.667632</real>
+		</dict>
+	</dict>
+</dict>
+</plist>

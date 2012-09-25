@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  rit_bus
+//  TigerBus
 //
-//  Created by Thomas DeMeo on 6/19/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Thomas DeMeo on 9/23/12.
+//  Copyright (c) 2012 Thomas DeMeo. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

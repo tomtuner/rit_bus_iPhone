@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>province_geo_boxes</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>minLat</key>
+			<real>43.083741</real>
+			<key>maxLat</key>
+			<real>43.086637</real>
+			<key>minLong</key>
+			<real>-77.657573</real>
+			<key>maxLong</key>
+			<real>-77.654045</real>
+		</dict>
+		<key>2</key>
+		<dict>
+			<key>minLat</key>
+			<real>43.086583</real>
+			<key>maxLat</key>
+			<real>43.087037</real>
+			<key>minLong</key>
+			<real>-77.65676999999999</real>
+			<key>maxLong</key>
+			<real>-77.654088</real>
+		</dict>
+		<key>3</key>
+		<dict>
+			<key>minLat</key>
+			<real>43.087037</real>
+			<key>maxLat</key>
+			<real>43.087513</real>
+			<key>minLong</key>
+			<real>-77.65642699999999</real>
+			<key>maxLong</key>
+			<real>-77.654088</real>
+		</dict>
+		<key>4</key>
+		<dict>
+			<key>minLat</key>
+			<real>43.087513</real>
+			<key>maxLat</key>
+			<real>43.08804</real>
+			<key>minLong</key>
+			<real>-77.656148</real>
+			<key>maxLong</key>
+			<real>-77.654088</real>
+		</dict>
+		<key>5</key>
+		<dict>
+			<key>minLat</key>
+			<real>43.08804</real>
+			<key>maxLat</key>
+			<real>43.088949</real>
+			<key>minLong</key>
+			<real>-77.655687</real>
+			<key>maxLong</key>
+			<real>-77.654088</real>
+		</dict>
+	</dict>
+</dict>
+</plist>
