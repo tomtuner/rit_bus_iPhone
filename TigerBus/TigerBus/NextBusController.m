@@ -43,6 +43,8 @@
     closestLocation = [RITBusCommon closestStopFromLatitude:[[LocationManager sharedLocationManager] latitude] andLongitude:[[LocationManager sharedLocationManager] longitude]];
     
     [stopTitle setTitle:closestLocation.title forState:UIControlStateNormal];
+    
+    timeUntilArrival.text = [RITBusCommon timeStringFromCurrentTimeInMinutesToDate:closestLocation.nextArrivalTime];
             
     [UIView animateWithDuration:2.0 delay: 0.0 options: UIViewAnimationOptionCurveEaseIn 
      animations:^{
@@ -53,7 +55,6 @@
                            delay: 0.0
                          options:UIViewAnimationOptionCurveEaseOut
                       animations:^{
-                          timeUntilArrival.text = @"37 minutes";
                           timeUntilArrival.alpha = 1.0;
                       }
                       completion:nil];

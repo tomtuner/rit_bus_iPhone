@@ -47,10 +47,15 @@ static RITBusCommon *globalBusManager = nil;
         NSEnumerator *enumerator = [allBusStops keyEnumerator];
         id key;
         BusStopLocation *point;
+        
+//TODO: Put In Helper Method
+        
         while ((key = [enumerator nextObject])) {
             NSDictionary *stop = [allBusStops objectForKey:key];
 
             NSString *title = [stop objectForKey:@"title"];
+            
+            NSArray *times = [stop objectForKey:@"times"];
 
             latitude = [[stop objectForKey:@"latitude"] doubleValue];
             longitude = [[stop  objectForKey:@"longitude"] doubleValue];
@@ -60,11 +65,53 @@ static RITBusCommon *globalBusManager = nil;
             if (![title isEqualToString:@""]) {
                 [point setTitle:title];
             }
+
+            NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+            [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+            [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+
+            [formatter setDateFormat:@"HH:mm:ss"];
+            NSDate *currentDate = [NSDate dateWithTimeIntervalSinceNow:[[NSTimeZone localTimeZone] secondsFromGMT]];
+            
+            NSDate *formattedCurrentDate = [formatter dateFromString:[formatter stringFromDate:currentDate]];
+            
+            for (NSString *stopDate in times) {
+                NSDate *stopTime = [formatter dateFromString:stopDate];
+                NSLog(@"Stop Time: %@", stopTime);
+                NSLog(@"Cureent Time Date: %@", formattedCurrentDate);
+                if ([stopTime compare:formattedCurrentDate]==NSOrderedDescending) {
+                    NSLog(@"Ascending");
+                    NSLog(@"Next Stop Time: %@", stopTime);
+                    point.nextArrivalTime = stopTime;
+                    break;
+                }
+                
+            }
+            
             [self.allStops setObject:point forKey:key];
         }
 
     }
     return (self.allStops);
+}
+
++ (NSString *) timeStringFromCurrentTimeInMinutesToDate:(NSDate *) otherDate
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+    [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+    
+    [formatter setDateFormat:@"HH:mm:ss"];
+    NSDate *currentDate = [NSDate dateWithTimeIntervalSinceNow:[[NSTimeZone localTimeZone] secondsFromGMT]];
+    
+    NSDate *formattedCurrentDate = [formatter dateFromString:[formatter stringFromDate:currentDate]];
+    
+    NSTimeInterval distanceBetweenDates = [otherDate timeIntervalSinceDate:formattedCurrentDate];
+    double secondsInAnMinute = 60;
+    NSInteger minutesBetweenDates = distanceBetweenDates / secondsInAnMinute;
+    
+    NSLog(@"Number of Minutes between dates: %d", minutesBetweenDates);
+    return [NSString stringWithFormat:@"%d miuntes", minutesBetweenDates];
 }
 
 + (BOOL) pointInPolygonWithNumberOfCorners: (int) polySides fromLatitude: (float) x andLongitude: (float) y

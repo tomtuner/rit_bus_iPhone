@@ -21,5 +21,6 @@
 
 - (NSMutableDictionary *) returnAllStops;
 + (BusStopLocation *) closestStopFromLatitude: (float) latitude andLongitude: (float) longitude;
++ (NSString *) timeStringFromCurrentTimeInMinutesToDate:(NSDate *) otherDate;
 
 @end

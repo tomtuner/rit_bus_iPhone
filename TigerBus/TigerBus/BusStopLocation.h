@@ -20,6 +20,7 @@
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *description;
 @property (nonatomic, strong) NSArray *destinationLocations;
+@property (nonatomic, strong) NSDate *nextArrivalTime;
 @property (nonatomic) float latitude;
 @property (nonatomic) float longitude;
 
