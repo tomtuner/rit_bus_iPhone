@@ -40,17 +40,26 @@
     [ThemeManager customizeView:self.view];
     [self setTitle:@"RIT"];
     
+    timeUntilArrival.alpha = 0.0;
+    
     closestLocation = [RITBusCommon closestStopFromLatitude:[[LocationManager sharedLocationManager] latitude] andLongitude:[[LocationManager sharedLocationManager] longitude]];
     
     [stopTitle setTitle:closestLocation.title forState:UIControlStateNormal];
     
-    timeUntilArrival.text = [RITBusCommon timeStringFromCurrentTimeInMinutesToDate:closestLocation.nextArrivalTime];
-            
-    [UIView animateWithDuration:2.0 delay: 0.0 options: UIViewAnimationOptionCurveEaseIn 
-     animations:^{
-        timeUntilArrival.alpha = 0.0;
+    NSInteger nextTime = [RITBusCommon timeFromCurrentTimeInMinutesToDate:closestLocation.nextArrivalTime];
+    if (closestLocation.pastLastStopTime) {
+        nextTime = 1440 + nextTime;
     }
-                     completion:^(BOOL finished) {
+    
+    if (nextTime != 1) {
+        timeUntilArrival.text = [NSString stringWithFormat:@"%d minutes", nextTime];
+
+    }else {
+        timeUntilArrival.text = [NSString stringWithFormat:@"%d minute", nextTime];
+    }
+    
+    self.arrivalTime.text = [RITBusCommon hoursMinutesSecondsStringFromDate:closestLocation.nextArrivalTime];
+    
      [UIView animateWithDuration:0.5
                            delay: 0.0
                          options:UIViewAnimationOptionCurveEaseOut
@@ -58,9 +67,6 @@
                           timeUntilArrival.alpha = 1.0;
                       }
                       completion:nil];
-     }];
-
-    // Do any additional setup after loading the view from its nib.
 }
 
 @end

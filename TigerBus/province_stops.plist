@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>park_point</key>
-	<dict>
 		<key>gleason_circle</key>
 		<dict>
 			<key>title</key>
@@ -13,33 +11,27 @@
 			<key>longitude</key>
 			<real>-77.675909</real>
 		</dict>
-		<key>10</key>
+		<key>province</key>
 		<dict>
 			<key>title</key>
-			<string></string>
+			<string>Province</string>
+			<key>id</key>
+			<string>5054</string>
 			<key>latitude</key>
-			<real>43.08255</real>
+			<real>43.086616</real>
 			<key>longitude</key>
-			<real>-77.67653</real>
+			<real>-77.65604500000001</real>
 		</dict>
-		<key>barnes_nobles</key>
+		<key>residence_halls</key>
 		<dict>
 			<key>title</key>
-			<string>Barnes and Nobles</string>
+			<string>Residence Halls</string>
+			<key>id</key>
+			<string>3381</string>
 			<key>latitude</key>
-			<real>43.092021</real>
+			<real>43.084177</real>
 			<key>longitude</key>
-			<real>-77.65518400000001</real>
+			<real>-77.667632</real>
 		</dict>
-		<key>park_point_south</key>
-		<dict>
-			<key>title</key>
-			<string>South</string>
-			<key>latitude</key>
-			<real>43.08832</real>
-			<key>longitude</key>
-			<real>-77.65803200000001</real>
-		</dict>
-	</dict>
 </dict>
 </plist>

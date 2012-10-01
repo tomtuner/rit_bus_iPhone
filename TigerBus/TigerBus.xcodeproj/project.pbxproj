@@ -23,7 +23,7 @@
 		E92B4D37160FB32E009D3D22 /* map_button.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D35160FB32E009D3D22 /* map_button.png */; };
 		E92B4D38160FB32E009D3D22 /* map_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D36160FB32E009D3D22 /* map_button@2x.png */; };
 		E92B4D40160FB350009D3D22 /* full_list_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D3B160FB350009D3D22 /* full_list_stops.plist */; };
-		E92B4D41160FB350009D3D22 /* park_point_stops_copy.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D3C160FB350009D3D22 /* park_point_stops_copy.plist */; };
+		E92B4D41160FB350009D3D22 /* province_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D3C160FB350009D3D22 /* province_stops.plist */; };
 		E92B4D42160FB350009D3D22 /* park_point_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D3D160FB350009D3D22 /* park_point_stops.plist */; };
 		E92B4D43160FB350009D3D22 /* province_geo_boxes.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D3E160FB350009D3D22 /* province_geo_boxes.plist */; };
 		E92B4D44160FB350009D3D22 /* rit_bus-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E92B4D3F160FB350009D3D22 /* rit_bus-Info.plist */; };
@@ -42,6 +42,9 @@
 		E92B4D70160FB51A009D3D22 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D6E160FB51A009D3D22 /* Theme.m */; };
 		E92B4D72160FB567009D3D22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B4D71160FB567009D3D22 /* CoreLocation.framework */; };
 		E92B4D74160FB56B009D3D22 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B4D73160FB56B009D3D22 /* MapKit.framework */; };
+		E9C56F9F1619045D00BD40A0 /* colony_manor_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9C56F9E1619045D00BD40A0 /* colony_manor_stops.plist */; };
+		E9C56FA1161904A600BD40A0 /* perkins_times.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9C56FA0161904A600BD40A0 /* perkins_times.plist */; };
+		E9C56FA3161909E000BD40A0 /* barnes_nobles_times.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9C56FA2161909E000BD40A0 /* barnes_nobles_times.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +70,7 @@
 		E92B4D35160FB32E009D3D22 /* map_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_button.png; sourceTree = "<group>"; };
 		E92B4D36160FB32E009D3D22 /* map_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_button@2x.png"; sourceTree = "<group>"; };
 		E92B4D3B160FB350009D3D22 /* full_list_stops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = full_list_stops.plist; sourceTree = "<group>"; };
-		E92B4D3C160FB350009D3D22 /* park_point_stops_copy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = park_point_stops_copy.plist; sourceTree = "<group>"; };
+		E92B4D3C160FB350009D3D22 /* province_stops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = province_stops.plist; sourceTree = "<group>"; };
 		E92B4D3D160FB350009D3D22 /* park_point_stops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = park_point_stops.plist; sourceTree = "<group>"; };
 		E92B4D3E160FB350009D3D22 /* province_geo_boxes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = province_geo_boxes.plist; sourceTree = "<group>"; };
 		E92B4D3F160FB350009D3D22 /* rit_bus-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "rit_bus-Info.plist"; sourceTree = "<group>"; };
@@ -97,6 +100,9 @@
 		E92B4D6E160FB51A009D3D22 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
 		E92B4D71160FB567009D3D22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E92B4D73160FB56B009D3D22 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E9C56F9E1619045D00BD40A0 /* colony_manor_stops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colony_manor_stops.plist; sourceTree = "<group>"; };
+		E9C56FA0161904A600BD40A0 /* perkins_times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = perkins_times.plist; sourceTree = "<group>"; };
+		E9C56FA2161909E000BD40A0 /* barnes_nobles_times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = barnes_nobles_times.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,8 +208,11 @@
 			isa = PBXGroup;
 			children = (
 				E92B4D3B160FB350009D3D22 /* full_list_stops.plist */,
-				E92B4D3C160FB350009D3D22 /* park_point_stops_copy.plist */,
+				E92B4D3C160FB350009D3D22 /* province_stops.plist */,
+				E9C56F9E1619045D00BD40A0 /* colony_manor_stops.plist */,
+				E9C56FA0161904A600BD40A0 /* perkins_times.plist */,
 				E92B4D3D160FB350009D3D22 /* park_point_stops.plist */,
+				E9C56FA2161909E000BD40A0 /* barnes_nobles_times.plist */,
 				E92B4D3E160FB350009D3D22 /* province_geo_boxes.plist */,
 				E92B4D3F160FB350009D3D22 /* rit_bus-Info.plist */,
 			);
@@ -346,12 +355,15 @@
 				E92B4D37160FB32E009D3D22 /* map_button.png in Resources */,
 				E92B4D38160FB32E009D3D22 /* map_button@2x.png in Resources */,
 				E92B4D40160FB350009D3D22 /* full_list_stops.plist in Resources */,
-				E92B4D41160FB350009D3D22 /* park_point_stops_copy.plist in Resources */,
+				E92B4D41160FB350009D3D22 /* province_stops.plist in Resources */,
 				E92B4D42160FB350009D3D22 /* park_point_stops.plist in Resources */,
 				E92B4D43160FB350009D3D22 /* province_geo_boxes.plist in Resources */,
 				E92B4D44160FB350009D3D22 /* rit_bus-Info.plist in Resources */,
 				E92B4D4D160FB3AC009D3D22 /* NextBusController.xib in Resources */,
 				E92B4D64160FB47A009D3D22 /* MapViewController.xib in Resources */,
+				E9C56F9F1619045D00BD40A0 /* colony_manor_stops.plist in Resources */,
+				E9C56FA1161904A600BD40A0 /* perkins_times.plist in Resources */,
+				E9C56FA3161909E000BD40A0 /* barnes_nobles_times.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +516,7 @@
 				E92B4D33160FB25F009D3D22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

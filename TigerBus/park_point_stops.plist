@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>park_point</key>
-	<dict>
 		<key>gleason_circle</key>
 		<dict>
 			<key>title</key>
@@ -58,6 +56,5 @@
 			<key>longitude</key>
 			<real>-77.667632</real>
 		</dict>
-	</dict>
 </dict>
 </plist>

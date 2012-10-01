@@ -55,8 +55,11 @@ static RITBusCommon *globalBusManager = nil;
 
             NSString *title = [stop objectForKey:@"title"];
             
-            NSArray *times = [stop objectForKey:@"times"];
-
+            NSArray *times = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@_times", key] ofType:@"plist"]];
+            if (!times) {
+                NSLog(@"Resource not found for file: %@_times", key);
+            }
+                                    
             latitude = [[stop objectForKey:@"latitude"] doubleValue];
             longitude = [[stop  objectForKey:@"longitude"] doubleValue];
 
@@ -88,6 +91,11 @@ static RITBusCommon *globalBusManager = nil;
                 
             }
             
+            if (point.nextArrivalTime == nil) {
+                point.nextArrivalTime = [formatter dateFromString:[times objectAtIndex:0]];
+                point.pastLastStopTime = YES;
+            }
+            
             [self.allStops setObject:point forKey:key];
         }
 
@@ -95,7 +103,7 @@ static RITBusCommon *globalBusManager = nil;
     return (self.allStops);
 }
 
-+ (NSString *) timeStringFromCurrentTimeInMinutesToDate:(NSDate *) otherDate
++ (NSInteger) timeFromCurrentTimeInMinutesToDate:(NSDate *) otherDate
 {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
@@ -111,7 +119,17 @@ static RITBusCommon *globalBusManager = nil;
     NSInteger minutesBetweenDates = distanceBetweenDates / secondsInAnMinute;
     
     NSLog(@"Number of Minutes between dates: %d", minutesBetweenDates);
-    return [NSString stringWithFormat:@"%d miuntes", minutesBetweenDates];
+    return minutesBetweenDates;
+}
+
++ (NSString *) hoursMinutesSecondsStringFromDate:(NSDate *) otherDate
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+    [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
+    
+    [formatter setDateFormat:@"h:mm a"];
+    return [formatter stringFromDate:otherDate];
 }
 
 + (BOOL) pointInPolygonWithNumberOfCorners: (int) polySides fromLatitude: (float) x andLongitude: (float) y
