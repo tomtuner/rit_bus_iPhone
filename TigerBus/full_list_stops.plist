@@ -18,8 +18,7 @@
 		<key>barnes_nobles</key>
 		<dict>
 			<key>stops</key>
-			<dict>
-				<key>barnes_nobles</key>
+			<array>
 				<dict>
 					<key>title</key>
 					<string>Barnes and Nobles</string>
@@ -28,7 +27,6 @@
 					<key>longitude</key>
 					<real>-77.65518400000001</real>
 				</dict>
-				<key>park_point_south</key>
 				<dict>
 					<key>title</key>
 					<string>Park Point South</string>
@@ -37,7 +35,6 @@
 					<key>longitude</key>
 					<real>-77.65803200000001</real>
 				</dict>
-				<key>residence_halls</key>
 				<dict>
 					<key>title</key>
 					<string>Residence Halls</string>
@@ -46,7 +43,6 @@
 					<key>longitude</key>
 					<real>-77.667632</real>
 				</dict>
-				<key>gleason_circle</key>
 				<dict>
 					<key>title</key>
 					<string>Gleason Circle</string>
@@ -55,7 +51,6 @@
 					<key>longitude</key>
 					<real>-77.675909</real>
 				</dict>
-				<key>lot_k</key>
 				<dict>
 					<key>title</key>
 					<string>Lot K</string>
@@ -64,7 +59,6 @@
 					<key>longitude</key>
 					<real>-77.666076</real>
 				</dict>
-				<key>park_point_north</key>
 				<dict>
 					<key>title</key>
 					<string>Park Point North</string>
@@ -73,7 +67,7 @@
 					<key>longitude</key>
 					<real>-77.658411</real>
 				</dict>
-			</dict>
+			</array>
 			<key>title</key>
 			<string>Barnes and Nobles</string>
 			<key>id</key>

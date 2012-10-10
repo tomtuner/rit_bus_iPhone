@@ -42,37 +42,45 @@ static RITBusCommon *globalBusManager = nil;
 
         self.allStops = [NSMutableDictionary dictionary];
         
-        float latitude;
-        float longitude;
+        
         NSEnumerator *enumerator = [allBusStops keyEnumerator];
         id key;
         BusStopLocation *point;
         
-//TODO: Put In Helper Method
+        // TODO: Put In Helper Method
         
         while ((key = [enumerator nextObject])) {
             NSDictionary *stop = [allBusStops objectForKey:key];
-
+            float latitude;
+            float longitude;
+            latitude = [[stop objectForKey:@"latitude"] doubleValue];
+            longitude = [[stop  objectForKey:@"longitude"] doubleValue];
+            
+            point = [[BusStopLocation alloc] initWithLatitude:latitude andLongitude:longitude];
+            point.destinationLocations = [NSMutableArray array];
+            
             NSString *title = [stop objectForKey:@"title"];
+            
+            NSArray *stops = [stop objectForKey:@"stops"];
+            for (NSDictionary *stopInfo in stops) {
+                BusStopLocation *tempStop;
+                latitude = [[stopInfo objectForKey:@"latitude"] doubleValue];
+                longitude = [[stopInfo objectForKey:@"longitude"] doubleValue];
+                tempStop = [[BusStopLocation alloc] initWithLatitude:latitude andLongitude:longitude];
+                tempStop.title = [stopInfo objectForKey:@"title"];
+                [point.destinationLocations addObject:tempStop];
+            }
+
             
             NSArray *times = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@_times", key] ofType:@"plist"]];
             if (!times) {
                 NSLog(@"Resource not found for file: %@_times", key);
             }
-                                    
-            latitude = [[stop objectForKey:@"latitude"] doubleValue];
-            longitude = [[stop  objectForKey:@"longitude"] doubleValue];
-
-            point = [[BusStopLocation alloc] initWithLatitude:latitude andLongitude:longitude];
-
-            if (![title isEqualToString:@""]) {
-                [point setTitle:title];
-            }
-
+            
             NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
             [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
             [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
-
+            
             [formatter setDateFormat:@"HH:mm:ss"];
             NSDate *currentDate = [NSDate dateWithTimeIntervalSinceNow:[[NSTimeZone localTimeZone] secondsFromGMT]];
             
@@ -81,15 +89,22 @@ static RITBusCommon *globalBusManager = nil;
             for (NSString *stopDate in times) {
                 NSDate *stopTime = [formatter dateFromString:stopDate];
                 NSLog(@"Stop Time: %@", stopTime);
-                NSLog(@"Cureent Time Date: %@", formattedCurrentDate);
-                if ([stopTime compare:formattedCurrentDate]==NSOrderedDescending) {
-                    NSLog(@"Ascending");
+                NSLog(@"Curent Time Date: %@", formattedCurrentDate);
+                if ([stopTime compare:formattedCurrentDate] == NSOrderedDescending) {
+                    NSLog(@"Descending");
                     NSLog(@"Next Stop Time: %@", stopTime);
                     point.nextArrivalTime = stopTime;
                     break;
                 }
                 
             }
+            
+
+            if (![title isEqualToString:@""]) {
+                [point setTitle:title];
+            }
+
+            
             
             if (point.nextArrivalTime == nil) {
                 point.nextArrivalTime = [formatter dateFromString:[times objectAtIndex:0]];
@@ -132,74 +147,6 @@ static RITBusCommon *globalBusManager = nil;
     return [formatter stringFromDate:otherDate];
 }
 
-+ (BOOL) pointInPolygonWithNumberOfCorners: (int) polySides fromLatitude: (float) x andLongitude: (float) y
-                              usingXPoints: (float[]) polyX andYPoints: (float[]) polyY {        
-    int   i, j=polySides-1;
-    BOOL  oddNodes=NO;
-    
-    for (i=0; i<polySides; i++) {
-        if (((polyY[i]< y && polyY[j]>=y)
-             ||   (polyY[j]< y && polyY[i]>=y))
-            &&  (polyX[i]<=x || polyX[j]<=x)) {
-            if (polyX[i]+(y-polyY[i])/(polyY[j]-polyY[i])*(polyX[j]-polyX[i])<x) {
-                oddNodes=!oddNodes;
-            }
-        }
-        j=i; 
-    }
-    
-    return oddNodes;
-}
-
-+ (BOOL) pointInTriangleWithOriginX: (float) xOrigin andYOrigin: (float) yOrigin withXPoints: (float[]) polyX andYPoints: (float[]) polyY
-                    usingLatitude :(float) lat andLongitude: (float) lng {
-    float longPA = lng - xOrigin;
-    float latPA = lat - yOrigin;
-    
-    float longBA = polyX[0] - xOrigin;
-    float latBA = polyY[0] - yOrigin;
-    
-    float longCA = polyX[1] - xOrigin;
-    float latCA = polyY[1] - yOrigin;
-    
-    NSLog(@"LatPA : %f", latPA);
-    NSLog(@"LatBA : %f", latBA);
-    NSLog(@"LatCA : %f", latCA);
-    NSLog(@"LongPA : %f", longPA);
-    NSLog(@"LongBA : %f", longBA);
-    NSLog(@"LongCA : %f", longCA);
-
-    
-//    if ((latPA < 0) || (longPA < 0) || (latCA < latPA) || (longCA < longPA) || (latBA < latPA) || (longBA < longPA)) {
-//        return NO;
-//    }
-    
-//    if ((latPA < 0) || (longPA < 0)) {
-//        return NO;
-//    }else if (latPA > latCA) {
-//        if (longPA > longCA) {
-//            return NO;
-//        }
-//    }else if (latPA > latBA) {
-//        if (longPA > longBA) {
-//            return NO;
-//        }
-//    }else {
-//        return YES;
-//    }
-    
-    if ((latPA < 0) || (longPA < 0)) {
-        return NO;
-    }
-    
-    if ((latPA < latBA) || (latPA < latCA)) {
-        if ((longPA < longBA) || (longPA < longCA)) {
-            return YES;
-        }
-    }
-    return NO;
-}
-
 + (BOOL) withinProvinceBoxesWithLatitude:(float)latitude andLongitude:(float)longitude {
     
     NSDictionary *provinceGeoBoxes = [[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"province_geo_boxes" ofType:@"plist"]] objectForKey:@"province_geo_boxes"];    
@@ -239,14 +186,14 @@ static RITBusCommon *globalBusManager = nil;
     NSDateComponents *weekdayComponents = [gregorian components:NSWeekdayCalendarUnit
                                                        fromDate:today];
     
-    
     // Should create helper methods for all of these calculations
     
-    if ((latitude > 43.078018 && latitude < 43.088009) && (longitude > -77.687959 && longitude < -77.670707)) {
-        BusStopLocation *lo = (BusStopLocation *)[stops objectForKey:@"gleason_circle"];
-        NSLog(@"Loc Title: %@", [lo title]);
-        return lo;
-    }else if ((latitude > 43.078825 && latitude < 43.084869) && (longitude > -77.67119 && longitude < -77.665461)) {
+//    if ((latitude > 43.078018 && latitude < 43.088009) && (longitude > -77.687959 && longitude < -77.670707)) {
+//        BusStopLocation *lo = (BusStopLocation *)[stops objectForKey:@"gleason_circle"];
+//        NSLog(@"Loc Title: %@", [lo title]);
+//        return lo;
+//    }else
+    if ((latitude > 43.078825 && latitude < 43.084869) && (longitude > -77.67119 && longitude < -77.665461)) {
         BusStopLocation *lo = (BusStopLocation *)[stops objectForKey:@"residence_halls"];
         NSLog(@"Loc Title: %@", [lo title]);
         return lo;
@@ -284,7 +231,6 @@ static RITBusCommon *globalBusManager = nil;
         // Today is saturday, include the TE3 locations in check
         
     }
-
     else
     {
         NSLog(@"No Stop Located");
@@ -294,7 +240,7 @@ static RITBusCommon *globalBusManager = nil;
         return lo;
     }
     
-    // Don't have intermediate stops for TE3 and Raquet club busses yet
+    // TODO: Don't have intermediate stops for TE3 and Raquet club busses yet
     
     return nil;
     

@@ -24,7 +24,7 @@
     self = [super init];
     if (self) {
         latitude = lat;
-        lng = longitude;
+        longitude = lng;
     }
     return self;
 }

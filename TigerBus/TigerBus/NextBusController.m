@@ -39,9 +39,7 @@
     
     [ThemeManager customizeView:self.view];
     [self setTitle:@"RIT"];
-    
-    timeUntilArrival.alpha = 0.0;
-    
+        
     closestLocation = [RITBusCommon closestStopFromLatitude:[[LocationManager sharedLocationManager] latitude] andLongitude:[[LocationManager sharedLocationManager] longitude]];
     
     [stopTitle setTitle:closestLocation.title forState:UIControlStateNormal];
@@ -60,13 +58,18 @@
     
     self.arrivalTime.text = [RITBusCommon hoursMinutesSecondsStringFromDate:closestLocation.nextArrivalTime];
     
-     [UIView animateWithDuration:0.5
-                           delay: 0.0
-                         options:UIViewAnimationOptionCurveEaseOut
-                      animations:^{
-                          timeUntilArrival.alpha = 1.0;
-                      }
-                      completion:nil];
+    for (BusStopLocation *locations in closestLocation.destinationLocations) {
+        NSLog(@"Hi: %@", locations.title);
+        
+    }
+    
+//     [UIView animateWithDuration:0.5
+//                           delay: 0.0
+//                         options:UIViewAnimationOptionCurveEaseOut
+//                      animations:^{
+//                          timeUntilArrival.alpha = 1.0;
+//                      }
+//                      completion:nil];
 }
 
 @end

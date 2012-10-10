@@ -14,12 +14,12 @@
     float longitude;
     NSString *title;
     NSString *description;
-    NSArray *destinationLocations;
+    NSMutableArray *destinationLocations;
 }
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *description;
-@property (nonatomic, strong) NSArray *destinationLocations;
+@property (nonatomic, strong) NSMutableArray *destinationLocations;
 @property (nonatomic, strong) NSDate *nextArrivalTime;
 @property (nonatomic) BOOL pastLastStopTime;
 @property (nonatomic) float latitude;
