@@ -42,8 +42,13 @@
 		E92B4D70160FB51A009D3D22 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B4D6E160FB51A009D3D22 /* Theme.m */; };
 		E92B4D72160FB567009D3D22 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B4D71160FB567009D3D22 /* CoreLocation.framework */; };
 		E92B4D74160FB56B009D3D22 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B4D73160FB56B009D3D22 /* MapKit.framework */; };
+		E9637FD4162BD30C000F3C1B /* park_point_south_times.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9637FD3162BD30C000F3C1B /* park_point_south_times.plist */; };
+		E9637FD6162BD72D000F3C1B /* perkins_green_times.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9637FD5162BD72D000F3C1B /* perkins_green_times.plist */; };
+		E9637FD8162BD76C000F3C1B /* residence_halls_times.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9637FD7162BD76C000F3C1B /* residence_halls_times.plist */; };
+		E9637FDA162BDA95000F3C1B /* gleason_circle_park_point_times.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9637FD9162BDA95000F3C1B /* gleason_circle_park_point_times.plist */; };
+		E9637FDC162BDB98000F3C1B /* lot_k_park_point_times.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9637FDB162BDB98000F3C1B /* lot_k_park_point_times.plist */; };
+		E9637FDF162BDD00000F3C1B /* park_point_north_times.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9637FDE162BDD00000F3C1B /* park_point_north_times.plist */; };
 		E9C56F9F1619045D00BD40A0 /* colony_manor_stops.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9C56F9E1619045D00BD40A0 /* colony_manor_stops.plist */; };
-		E9C56FA1161904A600BD40A0 /* perkins_times.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9C56FA0161904A600BD40A0 /* perkins_times.plist */; };
 		E9C56FA3161909E000BD40A0 /* barnes_nobles_times.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9C56FA2161909E000BD40A0 /* barnes_nobles_times.plist */; };
 /* End PBXBuildFile section */
 
@@ -100,8 +105,13 @@
 		E92B4D6E160FB51A009D3D22 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
 		E92B4D71160FB567009D3D22 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E92B4D73160FB56B009D3D22 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E9637FD3162BD30C000F3C1B /* park_point_south_times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = park_point_south_times.plist; sourceTree = "<group>"; };
+		E9637FD5162BD72D000F3C1B /* perkins_green_times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = perkins_green_times.plist; sourceTree = "<group>"; };
+		E9637FD7162BD76C000F3C1B /* residence_halls_times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = residence_halls_times.plist; sourceTree = "<group>"; };
+		E9637FD9162BDA95000F3C1B /* gleason_circle_park_point_times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gleason_circle_park_point_times.plist; sourceTree = "<group>"; };
+		E9637FDB162BDB98000F3C1B /* lot_k_park_point_times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lot_k_park_point_times.plist; sourceTree = "<group>"; };
+		E9637FDE162BDD00000F3C1B /* park_point_north_times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = park_point_north_times.plist; sourceTree = "<group>"; };
 		E9C56F9E1619045D00BD40A0 /* colony_manor_stops.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colony_manor_stops.plist; sourceTree = "<group>"; };
-		E9C56FA0161904A600BD40A0 /* perkins_times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = perkins_times.plist; sourceTree = "<group>"; };
 		E9C56FA2161909E000BD40A0 /* barnes_nobles_times.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = barnes_nobles_times.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,12 +217,11 @@
 		E92B4D3A160FB334009D3D22 /* plists */ = {
 			isa = PBXGroup;
 			children = (
+				E9637FD1162BD2E2000F3C1B /* times */,
 				E92B4D3B160FB350009D3D22 /* full_list_stops.plist */,
 				E92B4D3C160FB350009D3D22 /* province_stops.plist */,
 				E9C56F9E1619045D00BD40A0 /* colony_manor_stops.plist */,
-				E9C56FA0161904A600BD40A0 /* perkins_times.plist */,
 				E92B4D3D160FB350009D3D22 /* park_point_stops.plist */,
-				E9C56FA2161909E000BD40A0 /* barnes_nobles_times.plist */,
 				E92B4D3E160FB350009D3D22 /* province_geo_boxes.plist */,
 				E92B4D3F160FB350009D3D22 /* rit_bus-Info.plist */,
 			);
@@ -295,6 +304,28 @@
 			name = Managers;
 			sourceTree = "<group>";
 		};
+		E9637FD1162BD2E2000F3C1B /* times */ = {
+			isa = PBXGroup;
+			children = (
+				E9637FDD162BDBA6000F3C1B /* park point */,
+				E9637FD5162BD72D000F3C1B /* perkins_green_times.plist */,
+			);
+			name = times;
+			sourceTree = "<group>";
+		};
+		E9637FDD162BDBA6000F3C1B /* park point */ = {
+			isa = PBXGroup;
+			children = (
+				E9C56FA2161909E000BD40A0 /* barnes_nobles_times.plist */,
+				E9637FD3162BD30C000F3C1B /* park_point_south_times.plist */,
+				E9637FD7162BD76C000F3C1B /* residence_halls_times.plist */,
+				E9637FD9162BDA95000F3C1B /* gleason_circle_park_point_times.plist */,
+				E9637FDE162BDD00000F3C1B /* park_point_north_times.plist */,
+				E9637FDB162BDB98000F3C1B /* lot_k_park_point_times.plist */,
+			);
+			name = "park point";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -362,8 +393,13 @@
 				E92B4D4D160FB3AC009D3D22 /* NextBusController.xib in Resources */,
 				E92B4D64160FB47A009D3D22 /* MapViewController.xib in Resources */,
 				E9C56F9F1619045D00BD40A0 /* colony_manor_stops.plist in Resources */,
-				E9C56FA1161904A600BD40A0 /* perkins_times.plist in Resources */,
 				E9C56FA3161909E000BD40A0 /* barnes_nobles_times.plist in Resources */,
+				E9637FD4162BD30C000F3C1B /* park_point_south_times.plist in Resources */,
+				E9637FD6162BD72D000F3C1B /* perkins_green_times.plist in Resources */,
+				E9637FD8162BD76C000F3C1B /* residence_halls_times.plist in Resources */,
+				E9637FDA162BDA95000F3C1B /* gleason_circle_park_point_times.plist in Resources */,
+				E9637FDC162BDB98000F3C1B /* lot_k_park_point_times.plist in Resources */,
+				E9637FDF162BDD00000F3C1B /* park_point_north_times.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

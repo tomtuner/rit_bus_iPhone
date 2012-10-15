@@ -25,6 +25,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *timeUntilArrival;
 @property (nonatomic, strong) IBOutlet UILabel *arrivalTime;
 @property (nonatomic, strong) BusStopLocation *closestLocation;
+@property (nonatomic, strong) NSMutableArray *nextLocations;
 
 - (IBAction)showLiveBusMap:(id)sender;
 

@@ -68,6 +68,7 @@ static RITBusCommon *globalBusManager = nil;
                 longitude = [[stopInfo objectForKey:@"longitude"] doubleValue];
                 tempStop = [[BusStopLocation alloc] initWithLatitude:latitude andLongitude:longitude];
                 tempStop.title = [stopInfo objectForKey:@"title"];
+                [tempStop calculateNextFiveStopTimes];
                 [point.destinationLocations addObject:tempStop];
             }
 

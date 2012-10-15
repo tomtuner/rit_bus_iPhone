@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>7:30:00</string>
+	<string>7:50:00</string>
+    <string>7:53:00</string>
+	<string>8:10:00</string>
+	<string>8:20:00</string>
+	<string>8:30:00</string>
+	<string>8:50:00</string>
+    <string>8:52:00</string>
+	<string>9:10:00</string>
+	<string>9:20:00</string>
+	<string>9:30:00</string>
+	<string>9:50:00</string>
+	<string>9:52:00</string>
+	<string>10:11:00</string>
+	<string>10:32:00</string>
+	<string>10:50:00</string>
+	<string>11:21:00</string>
+	<string>11:30:00</string>
+	<string>11:50:00</string>
+	<string>12:10:00</string>
+	<string>12:20:00</string>
+	<string>12:30:00</string>
+	<string>12:50:00</string>
+	<string>13:10:00</string>
+	<string>13:20:00</string>
+	<string>13:30:00</string>
+	<string>13:50:00</string>
+	<string>14:10:00</string>
+	<string>14:30:00</string>
+	<string>14:50:00</string>
+	<string>15:10:00</string>
+	<string>15:30:00</string>
+	<string>15:45:00</string>
+	<string>16:05:00</string>
+	<string>16:25:00</string>
+	<string>16:45:00</string>
+	<string>17:05:00</string>
+	<string>17:25:00</string>
+	<string>17:45:00</string>
+	<string>18:05:00</string>
+	<string>18:25:00</string>
+	<string>18:29:00</string>
+    <string>18:54:00</string>
+	<string>19:19:00</string>
+	<string>19:44:00</string>
+	<string>20:09:00</string>
+	<string>20:44:00</string>
+	<string>21:09:00</string>
+	<string>21:34:00</string>
+    <string>21:59:00</string>
+</array>
+</plist>

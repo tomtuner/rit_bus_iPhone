@@ -58,10 +58,13 @@
     
     self.arrivalTime.text = [RITBusCommon hoursMinutesSecondsStringFromDate:closestLocation.nextArrivalTime];
     
-    for (BusStopLocation *locations in closestLocation.destinationLocations) {
-        NSLog(@"Hi: %@", locations.title);
-        
+    for (BusStopLocation *location in closestLocation.destinationLocations) {
+        NSLog(@"Hi: %@", location.title);
+        // TODO: Get next 5 times for each location
+        NSLog(@"NextTimesArray: %@", location.nextFiveStopTimes);
+//        [self addViewForBusLocation:location];
     }
+    [self addViewForBusLocations:closestLocation.destinationLocations];
     
 //     [UIView animateWithDuration:0.5
 //                           delay: 0.0
@@ -70,6 +73,26 @@
 //                          timeUntilArrival.alpha = 1.0;
 //                      }
 //                      completion:nil];
+}
+
+- (void) addViewForBusLocations:(NSArray *) stops
+{
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(10, 250, self.view.frame.size.width - 20, 200)];
+    
+    int numViews = stops.count;
+    CGSize viewSize = CGSizeMake(120, 100);
+    
+    
+    for (int i = 0; i < numViews; i++) {
+        
+        UIView *view = [UIView new];
+        view.frame = CGRectMake((viewSize.width * i) + 10, 10, viewSize.width, viewSize.height);
+        view.backgroundColor = [UIColor whiteColor];
+        [scrollView addSubview:view];
+    }
+    
+    [self.view addSubview:scrollView];
+    scrollView.contentSize = CGSizeMake(numViews * viewSize.width, scrollView.frame.size.height);
 }
 
 @end

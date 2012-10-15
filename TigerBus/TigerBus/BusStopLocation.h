@@ -9,6 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "RITBusCommon.h"
 
+typedef enum {
+    TBBusKeyGleasonCircle = 0,
+    TBBusKeyParkPointNorth,
+    TBBusKeyParkPointSouth,
+    TBBusKeyBarnesAndNobles,
+    TBBusKeyLotK,
+    TBBusKeyResidenceHalls
+} TBBusKey;
+
 @interface BusStopLocation : NSObject {
     float latitude;
     float longitude;
@@ -19,8 +28,10 @@
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *description;
+@property (nonatomic, strong) NSString *key;
 @property (nonatomic, strong) NSMutableArray *destinationLocations;
 @property (nonatomic, strong) NSDate *nextArrivalTime;
+@property (nonatomic, strong) NSMutableArray *nextFiveStopTimes;
 @property (nonatomic) BOOL pastLastStopTime;
 @property (nonatomic) float latitude;
 @property (nonatomic) float longitude;
@@ -29,5 +40,6 @@
 
 - (void) setLatitude:(float) lat;
 - (void) setLongitude:(float) lng;
+- (void) calculateNextFiveStopTimes;
 
 @end
