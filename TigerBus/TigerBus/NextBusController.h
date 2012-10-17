@@ -24,6 +24,7 @@
 @property (nonatomic, strong) IBOutlet UIButton *stopTitle;
 @property (nonatomic, strong) IBOutlet UILabel *timeUntilArrival;
 @property (nonatomic, strong) IBOutlet UILabel *arrivalTime;
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) BusStopLocation *closestLocation;
 @property (nonatomic, strong) NSMutableArray *nextLocations;
 

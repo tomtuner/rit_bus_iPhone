@@ -38,7 +38,7 @@
     [super viewDidLoad];
     
     [ThemeManager customizeView:self.view];
-    [self setTitle:@"RIT"];
+    [self setTitle:@"Tiger Bus"];
         
     closestLocation = [RITBusCommon closestStopFromLatitude:[[LocationManager sharedLocationManager] latitude] andLongitude:[[LocationManager sharedLocationManager] longitude]];
     
@@ -77,7 +77,7 @@
 
 - (void) addViewForBusLocations:(NSArray *) stops
 {
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(10, 250, self.view.frame.size.width - 20, 200)];
+    UIScrollView *scrollView = self.scrollView;
     
     int numViews = stops.count;
     CGSize viewSize = CGSizeMake(120, 100);
