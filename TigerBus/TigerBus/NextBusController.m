@@ -56,7 +56,7 @@
         timeUntilArrival.text = [NSString stringWithFormat:@"%d minute", nextTime];
     }
     
-    self.arrivalTime.text = [RITBusCommon hoursMinutesSecondsStringFromDate:closestLocation.nextArrivalTime];
+    self.arrivalTime.text = [NSString stringWithFormat:@"(%@)", [RITBusCommon hoursMinutesSecondsStringFromDate:closestLocation.nextArrivalTime]];
     
     for (BusStopLocation *location in closestLocation.destinationLocations) {
         NSLog(@"Hi: %@", location.title);

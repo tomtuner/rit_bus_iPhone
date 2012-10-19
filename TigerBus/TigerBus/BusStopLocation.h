@@ -29,6 +29,7 @@ typedef enum {
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *description;
 @property (nonatomic, strong) NSString *key;
+@property (nonatomic, strong) NSString *routeIdentifier;
 @property (nonatomic, strong) NSMutableArray *destinationLocations;
 @property (nonatomic, strong) NSDate *nextArrivalTime;
 @property (nonatomic, strong) NSMutableArray *nextFiveStopTimes;
