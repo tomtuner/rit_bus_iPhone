@@ -43,7 +43,7 @@
     
     [stopTitle setTitle:closestLocation.title forState:UIControlStateNormal];
     
-    [self setTitle:@"R. I. T. "];
+    [self setTitle:@"Tiger Bus"];
         
     [UIView animateWithDuration:2.0 delay: 0.0 options: UIViewAnimationOptionCurveEaseIn 
      animations:^{
